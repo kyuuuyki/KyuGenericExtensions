@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KyuGenericExtensions_Example' do
+  pod 'KyuGenericExtensions', :path => '../'
+
+  target 'KyuGenericExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
