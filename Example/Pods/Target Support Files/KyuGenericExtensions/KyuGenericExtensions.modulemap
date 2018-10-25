@@ -1,0 +1,6 @@
+framework module KyuGenericExtensions {
+  umbrella header "KyuGenericExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

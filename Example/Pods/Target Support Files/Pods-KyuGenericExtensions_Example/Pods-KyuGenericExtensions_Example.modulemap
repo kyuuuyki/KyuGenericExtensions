@@ -1,0 +1,6 @@
+framework module Pods_KyuGenericExtensions_Example {
+  umbrella header "Pods-KyuGenericExtensions_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - KyuGenericExtensions (0.3.0)
+
+DEPENDENCIES:
+  - KyuGenericExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  KyuGenericExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KyuGenericExtensions: a426f5cd74ab8c2b0c1fd1d5101d0c4a184e3aea
+
+PODFILE CHECKSUM: 005ee30fd5ebd7e9f7221aea92b88de4b4df54f3
+
+COCOAPODS: 1.9.3

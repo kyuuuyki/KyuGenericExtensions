@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KyuGenericExtensions'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of KyuGenericExtensions.'
+  s.version          = '0.4.1'
+  s.swift_version    = '4.2'
+  s.summary          = 'The Swift Extensions.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +22,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Chayanon Ardkham/KyuGenericExtensions'
+  s.homepage         = 'https://github.com/kyuuuyki/KyuGenericExtensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Chayanon Ardkham' => 'kyuuuyk@hotmail.com' }
-  s.source           = { :git => 'https://github.com/Chayanon Ardkham/KyuGenericExtensions.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Chayanon Ardkham' => 'develop@chayanon.dev' }
+  s.source           = { :git => 'https://github.com/kyuuuyki/KyuGenericExtensions.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.chayanon.dev'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'KyuGenericExtensions/Classes/**/*'
   
