@@ -60,13 +60,13 @@ class ViewController: UIViewController {
         print("\n[\(string)]")
     }
     
-    //MARK: Set Defaults
+    // MARK: Set Defaults
     func setDefaultsExample() {
         print("[Setting Up Defaults]")
         
-        Defaults.shared.calendar = Calendar(identifier: .buddhist)
-        Defaults.shared.locale = Locale(identifier: "th_TH")
-        Defaults.shared.timeZone = TimeZone(abbreviation: "GMT+7") ?? TimeZone(secondsFromGMT: 25200)!
+        Defaults.defaults().calendar = Calendar(identifier: .buddhist)
+        Defaults.defaults().locale = Locale(identifier: "th_TH")
+        Defaults.defaults().timeZone = TimeZone(abbreviation: "GMT+7") ?? TimeZone(secondsFromGMT: 25200)!
     }
 }
 

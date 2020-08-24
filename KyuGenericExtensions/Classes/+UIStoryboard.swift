@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Initialization
+// MARK: - Initialization
 
 ///Make ViewController initializable from Storyboard using ClassName.
 public protocol StoryboardInstantiable {

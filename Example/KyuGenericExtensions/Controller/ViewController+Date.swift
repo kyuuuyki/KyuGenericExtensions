@@ -10,7 +10,7 @@ import Foundation
 
 extension ViewController {
     
-    //MARK: Date to String
+    // MARK: Date to String
     func dateToStringExample() {
         KGETitlePrint(string: "DATE TO STRING")
         

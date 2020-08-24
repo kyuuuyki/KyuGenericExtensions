@@ -16,19 +16,19 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- iOS 12.0+
-- Xcode 10.0+
-- Swift 4.2+
+- iOS 13.0+
+- Xcode 11.0+
+- Swift 5+
 
 ## Installation
 
 KyuGenericExtensions is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-### Swift 4.2
+### Swift 5
 
 ```ruby
-pod 'KyuGenericExtensions', '~> 0.4.1'
+pod 'KyuGenericExtensions', '~> 1.0.0'
 ```
 
 ## Author

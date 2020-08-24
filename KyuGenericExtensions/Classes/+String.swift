@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - String to Date
+// MARK: - String to Date
 extension String {
     
     ///Get Date from TimeString with configurable dateFormats. Already support ISO8601 formats.
@@ -38,7 +38,7 @@ extension String {
     }
 }
 
-//MARK: - String to QRCode Image
+// MARK: - String to QRCode Image
 extension String {
     
     ///Get QRCode Image from String.
@@ -57,7 +57,13 @@ extension String {
             let scaledSize = CGAffineTransform(scaleX: scaleX, y: scaleY)
             let transformedQRImage = qrImage.transformed(by: scaledSize)
             
-            return UIImage(ciImage: transformedQRImage)
+            let colorParameters = [
+                "inputColor0": CIColor(color: .label), // Foreground
+                "inputColor1": CIColor(color: .clear) // Background
+            ]
+            
+            let coloredQRImage = transformedQRImage.applyingFilter("CIFalseColor", parameters: colorParameters)
+            return UIImage(ciImage: coloredQRImage)
         }
         else {
             
@@ -66,7 +72,7 @@ extension String {
     }
 }
 
-//MARK: - Check if String contains other String
+// MARK: - Check if String contains other String
 extension String {
     
     ///Check if String contains other String.
@@ -81,7 +87,7 @@ extension String {
     }
 }
 
-//MARK: - Split String by other String
+// MARK: - Split String by other String
 extension String {
     
     ///Split String by other String.
@@ -116,7 +122,7 @@ extension String {
     }
 }
 
-//MARK: - Calculate width and height from String
+// MARK: - Calculate width and height from String
 extension String {
     
     ///Calculate height from String.

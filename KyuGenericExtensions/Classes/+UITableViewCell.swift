@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - TableViewCell's Style
+// MARK: - TableViewCell's Style
 extension UITableViewCell {
     
     ///Hide cell's separator.

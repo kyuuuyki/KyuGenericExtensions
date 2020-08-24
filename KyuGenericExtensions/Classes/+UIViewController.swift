@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Hide keyboard when tapping outside input field
+// MARK: - Hide keyboard when tapping outside input field
 extension UIViewController {
     
     ///Make ViewController automatically end editing when user tapped outside input field.
@@ -27,7 +27,7 @@ extension UIViewController {
     }
 }
 
-//MARK: - Alert handling
+// MARK: - Alert handling
 extension UIViewController {
     
     ///Display AlertView with activity indicator.

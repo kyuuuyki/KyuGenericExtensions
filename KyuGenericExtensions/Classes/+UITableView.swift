@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Configure Cells
+// MARK: - Configure Cells
 extension UITableView {
     
     ///Register reusable cells by ClassName.
@@ -22,7 +22,7 @@ extension UITableView {
     }
 }
 
-//MARK: - Scrolling
+// MARK: - Scrolling
 extension UITableView {
     
     ///Scroll to last UITableViewCell.

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Configure Cells
+// MARK: - Configure Cells
 extension UICollectionView {
     
     ///Register reusable cells by ClassName.

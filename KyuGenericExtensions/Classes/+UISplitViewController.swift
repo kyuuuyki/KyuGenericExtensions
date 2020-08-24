@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - SplitView Ratio
+// MARK: - SplitView Ratio
 extension UISplitViewController {
     
     ///Set SplitView's masterView and detailView ratio.

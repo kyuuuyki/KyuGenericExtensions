@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Initialization
+// MARK: - Initialization
 extension UIView {
     
     private class func initFromNib<T: UIView>(_ viewClass: T.Type) -> T {
@@ -21,7 +21,7 @@ extension UIView {
     }
 }
 
-//MARK: - Round Corner
+// MARK: - Round Corner
 extension UIView {
     
     ///Set corners for View.
@@ -38,7 +38,7 @@ extension UIView {
     }
 }
 
-//MARK: - View to Image
+// MARK: - View to Image
 extension UIView {
     
     ///Get image from View.
@@ -54,14 +54,14 @@ extension UIView {
     }
 }
 
-//MARK: - Add Blurred Background Image
+// MARK: - Add Blurred Background Image
 extension UIView {
     
     ///Add Blur Background.
-    public func insertBlurredBackground() {
+    public func insertBlurredBackground(withStyle: UIBlurEffect.Style? = nil) {
         
         //Back View
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let blurEffect = UIBlurEffect(style: withStyle ?? .systemChromeMaterial)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = bounds
         
@@ -72,22 +72,25 @@ extension UIView {
     }
 }
 
-//MARK: - SLIDE VIEW IN OR OUT
+// MARK: - SLIDE VIEW IN OR OUT
 extension UIView {
     
     ///Animate slide in from edge.
-    public func slideIn(from edge: UIRectEdge, withDuration: Double, delay: Double = 0, animation: @escaping () -> () = {}, completion: @escaping () -> () = {}) {
+    public func slideIn(from edge: UIRectEdge, withDuration: Double, delay: Double = 0, usingSpringWithDamping: CGFloat = 1, initialSpringVelocity: CGFloat = 1, options: AnimationOptions = [], animation: @escaping () -> () = {}, completion: @escaping () -> () = {}) {
         
-        animate(isSlideIn: true, from: edge, withDuration: withDuration, delay: delay, animation: animation, completion: completion)
+        animate(isSlideIn: true, from: edge, withDuration: withDuration, delay: delay, usingSpringWithDamping: usingSpringWithDamping, initialSpringVelocity: initialSpringVelocity, options: options, animation: animation, completion: completion)
     }
     
     ///Animate slide out to edge.
-    public func slideOut(to edge: UIRectEdge, withDuration: Double, delay: Double = 0, animation: @escaping () -> () = {}, completion: @escaping () -> () = {}) {
+    public func slideOut(to edge: UIRectEdge, withDuration: Double, delay: Double = 0, usingSpringWithDamping: CGFloat = 1, initialSpringVelocity: CGFloat = 1, options: AnimationOptions = [], animation: @escaping () -> () = {}, completion: @escaping () -> () = {}) {
         
-        animate(isSlideIn: false, from: edge, withDuration: withDuration, delay: delay, animation: animation, completion: completion)
+        animate(isSlideIn: false, from: edge, withDuration: withDuration, delay: delay, usingSpringWithDamping: usingSpringWithDamping, initialSpringVelocity: initialSpringVelocity, options: options, animation: animation, completion: completion)
     }
     
-    private func animate(isSlideIn: Bool, from edge: UIRectEdge, withDuration: Double, delay: Double, animation: @escaping () -> (), completion: @escaping () -> ()) {
+    private func animate(isSlideIn: Bool, from edge: UIRectEdge, withDuration: Double, delay: Double, usingSpringWithDamping: CGFloat, initialSpringVelocity: CGFloat, options: AnimationOptions, animation: @escaping () -> (), completion: @escaping () -> ()) {
+        
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         
         //Does not support all direction
         if edge == .all {
@@ -121,7 +124,7 @@ extension UIView {
 
             switch edge {
             case .top:
-                startingY = 0 + UIApplication.shared.statusBarFrame.height
+                startingY = 0 + statusBarHeight
                 
             case .left:
                 startingX = 0
@@ -162,7 +165,7 @@ extension UIView {
         
         switch edge {
         case .top:
-            distanceToMoveY = frame.size.height + UIApplication.shared.statusBarFrame.height
+            distanceToMoveY = frame.size.height + statusBarHeight
             
         case .left:
             distanceToMoveX = frame.size.width
@@ -185,7 +188,7 @@ extension UIView {
         }
         
         //Animate
-        UIView.animate(withDuration: withDuration, delay: delay, options: [], animations: {
+        UIView.animate(withDuration: withDuration, delay: delay, usingSpringWithDamping: usingSpringWithDamping, initialSpringVelocity: initialSpringVelocity, options: options, animations: {
             
             self.transform = self.transform.translatedBy(x: distanceToMoveX, y: distanceToMoveY)
             
@@ -198,7 +201,7 @@ extension UIView {
     }
 }
 
-//MARK: - Gradient layer
+// MARK: - Gradient layer
 extension UIView {
     
     ///Apply Gradient layer on View.

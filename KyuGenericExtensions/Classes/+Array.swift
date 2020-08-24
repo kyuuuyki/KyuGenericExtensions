@@ -7,7 +7,7 @@
 
 import Foundation
 
-//MARK: - Partitioning an Array
+// MARK: - Partitioning an Array
 extension Array {
     
     ///Partitioning an Array.

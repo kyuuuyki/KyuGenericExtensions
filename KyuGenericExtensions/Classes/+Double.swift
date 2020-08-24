@@ -7,14 +7,14 @@
 
 import Foundation
 
-//MARK: - Double to String
+// MARK: - Double to String
 extension Double {
     
     ///Double to String by NumberFormatter.
     public func toString(format: NumberFormatter.Style) -> String {
         
         let formatter = NumberFormatter()
-        formatter.locale = Defaults.shared.locale
+        formatter.locale = Defaults.defaults().locale
         formatter.numberStyle = format
         
         return formatter.string(from: self as NSNumber) ?? "-"

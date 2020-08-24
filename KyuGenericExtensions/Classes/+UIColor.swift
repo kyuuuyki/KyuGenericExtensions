@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Initialization
+// MARK: - Initialization
 extension UIColor {
     
     ///Init UIColor with Hexadecimal.
@@ -32,8 +32,8 @@ extension UIColor {
                 trimmedHexadecimal = "0" + trimmedHexadecimal
             }
             
-            var rgbValue: UInt32 = 0
-            Scanner(string: trimmedHexadecimal).scanHexInt32(&rgbValue)
+            var rgbValue: UInt64 = 0
+            Scanner(string: trimmedHexadecimal).scanHexInt64(&rgbValue)
             
             let red = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0
             let green = CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
@@ -44,7 +44,7 @@ extension UIColor {
     }
 }
 
-//MARK: - Adjust Color Brightness
+// MARK: - Adjust Color Brightness
 extension UIColor {
     
     ///Check if UIColor is dark or light color.
@@ -93,7 +93,7 @@ extension UIColor {
     }
 }
 
-//MARK: - Color to Image
+// MARK: - Color to Image
 extension UIColor {
     
     ///Get image from Color.
@@ -117,7 +117,7 @@ extension UIColor {
     }
 }
 
-//MARK: - Get Color
+// MARK: - Get Color
 extension UIColor {
     
     ///Get Reverse UIColor.

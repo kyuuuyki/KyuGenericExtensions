@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-//MARK: - Set inversed-color for Text based on BackgroundColor
+// MARK: - Set inversed-color for Text based on BackgroundColor
 extension UILabel {
     
     ///Set inversed-color for Text based on BackgroundColor.
@@ -25,7 +25,7 @@ extension UILabel {
     }
 }
 
-//MARK: - Set inversed-color for BackgroundColor based on Text
+// MARK: - Set inversed-color for BackgroundColor based on Text
 extension UILabel {
     
     ///Set inversed-color for BackgroundColor based on Text.

@@ -7,34 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		074748FF4768F81647B14410A4C1A038 /* +UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E032237575A6DCFE1DAB49368B7B161 /* +UIViewController.swift */; };
-		0955D36CEAC160B7F669F1D9437D0528 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A0D15638BC9D6851E28B368D3F49E /* Defaults.swift */; };
-		0CCAD8EE57446B2B01E950484B8B050C /* KyuGenericExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F78666E75B75265AAAFF14281EFE07 /* KyuGenericExtensions-dummy.m */; };
-		132F129158521A3FAB353D980F7CA8D5 /* +UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A51903AC97E24921DF22F9DFC9C817 /* +UITableView.swift */; };
-		1B659506B6C6B7D6D7D80FD5F66D452A /* +UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1163C95C9578C30094F1144A63C3D9 /* +UIView.swift */; };
-		1F64C2CE54502B0546FF0D084E3B2F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		142AFA1370678034C935B8CEC6D23099 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC1C429BD32EAB017CD1AFACC4BDEAC /* Defaults.swift */; };
+		17B2C5B909C72CAE554D95DF4E323B88 /* +UISplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FBCF501BC45823C6E700F0BBAC693 /* +UISplitViewController.swift */; };
+		1AAC993691339E605714652D78203D71 /* +Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DCB9DEA60BAB5D5A688075A7670257 /* +Double.swift */; };
+		1E036C10DB194D6804D92B27D8B22E00 /* KyuGenericExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C082928BC580102E92732EA69BCF170C /* KyuGenericExtensions-dummy.m */; };
 		21CE74C217945E17C15B12A5643B1DE7 /* Pods-KyuGenericExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D90C430F62FCA2B3A37335997C8FCFF5 /* Pods-KyuGenericExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3277B2E61C50AEF32A5C4E5A1FA63542 /* +Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43756D46556AD19FC35AC472A36E626 /* +Array.swift */; };
-		5DEC05476DD0FA9B876398AD2B9ABA71 /* +UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA9E337746D225C5EB525B0830CBBB /* +UIColor.swift */; };
+		2DF846695194A6C257CB8BE135DD044B /* +UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555FB2740D1E12A754F4DD8A3B61DF3 /* +UIColor.swift */; };
+		2F47BB6A7874216197CB34C7B9BB7BD3 /* KyuGenericExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D1BA3606D1819D47BAC88882D6C71F6 /* KyuGenericExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		426E25FDF2A262F49382FA5414998B7D /* +UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF6C6899FF80D1F0E484E1B35E180A /* +UIStoryboard.swift */; };
+		43FCEBE5865E6BF40892AF0BE8CA9804 /* SlidableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03981F4565A40A9803DF71D10CAAB621 /* SlidableView.swift */; };
+		466FCA5058ACE0274E878447D1751F5D /* +UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EBEF6D92A91793C3BBFCD831C321D5 /* +UINavigationController.swift */; };
 		6C5E2200FCD071C9E7187A23CEE9E2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7A73BA3C0D9D28D9999F3E975630A812 /* Defaults+Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42773DFA969367DBAA393BBB434E3548 /* Defaults+Application.swift */; };
-		828E85F8A94DBC7D3B915CF1A39A09BF /* +String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC672B60693414EB2A7EC16E6627DF5B /* +String.swift */; };
-		9E102B460257EE631926C07419E8F9F8 /* +UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258DF5B65395D7A4BED127E246955038 /* +UITableViewCell.swift */; };
-		9FC3A28A3327FC62B6D74ADC7F43E7A3 /* +UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20AE4E57F3A9D13109DE64786E191B8 /* +UILabel.swift */; };
-		A0EC3B2A24F4207600E071B0 /* +UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC3B2824F4207600E071B0 /* +UIStoryboard.swift */; };
-		A0EC3B2B24F4207600E071B0 /* +UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC3B2924F4207600E071B0 /* +UICollectionView.swift */; };
-		A8A7FDE6FECF8AEE04E1C2E19D24367A /* Defaults+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F0D7785A656EAA473AADC956F4CA78 /* Defaults+DateFormat.swift */; };
-		B397C9B335F19C69F2EDEEC532C8D96C /* +UISplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2441A04255BD152BD21BF433BEC50E3 /* +UISplitViewController.swift */; };
-		B7D0C52BBD3DB4A84E6CDB64C7854D30 /* KyuGenericExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5385DA9D6D8429AF79C8153BC8F3FC45 /* KyuGenericExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C923529F0BFF96AFE521C96595AD55C5 /* +UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3336EFF69790834E8B3BC69D9A240CFC /* +UINavigationController.swift */; };
+		758809757F2BD47F78FACCF3E907404A /* +UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC000395C7E97B86A0EB17AEBC8DC7 /* +UILabel.swift */; };
+		7748F6896313C1D754E3898BDB4B843A /* +String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283434BA9E828B3EBED9041DD667825 /* +String.swift */; };
+		78516C45A4169AA2A60DFCF30A92CE28 /* +Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5E073105898FCAA664692D7219980 /* +Array.swift */; };
+		83B1F69A8AA0EA77E90CA3A694A7DD24 /* DefaultViewController+SlidableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A252D814A6F45038078157C59825D4 /* DefaultViewController+SlidableView.swift */; };
+		8BEB68C0B155D9CCA2EDC04E84A2DBF7 /* +UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D3BD9165DA02C200C9C866F548876 /* +UIView.swift */; };
+		90E3083039BCF5F0447DF11C00D9ED8C /* +UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E07A5326F46558E254E7C4465CF5BC /* +UITableViewCell.swift */; };
+		A06E5C202515F0E50053908E /* +UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E5C1F2515F0E50053908E /* +UIWindow.swift */; };
+		A06E5C242515F4FD0053908E /* +UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E5C232515F4FD0053908E /* +UIApplication.swift */; };
+		BE8307031962DDA2DBCC81E8D358D30D /* +Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63BD0B00FEDCBF2E6ABB8E92DF0A7BE /* +Date.swift */; };
+		D5E81564A8FB82CBE9159070010AD50E /* PagingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A072E999A08FCA659A9BD08B48C8CB /* PagingCollectionViewFlowLayout.swift */; };
+		D6F7594B878A47F356D1D1FF0F4A6721 /* +UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EC3E834659732FE6F562FCEF9799F /* +UIViewController.swift */; };
 		DCBB9F5EF9331F5344A1256FBB18A2D5 /* Pods-KyuGenericExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B341D61ACA4E51665425573091BE350 /* Pods-KyuGenericExtensions_Example-dummy.m */; };
-		EDD65F46B2BCCEB507DF27422BF69D6C /* +Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F900084F17F8827C3DE29A8427F4FF /* +Date.swift */; };
-		F3E673A04EA27202C264FC386DAB7883 /* PagingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E4C47470E5612EC2B2C6BE866B0E18 /* PagingCollectionViewFlowLayout.swift */; };
-		FDF607F84D616E9B1458DD35622DB8B8 /* +Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625BF7E9684C5BAA9767B8724E28A65A /* +Double.swift */; };
+		DEDFA92FB7BE6C0EB8C95C23B5CEB5D8 /* +UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48692B32BB8F5F263ABC62F66B17C35 /* +UITableView.swift */; };
+		E6C1692724B16D60D16F55DC5413067D /* +UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C236346C3407B2EE50CCA17376BE1 /* +UICollectionView.swift */; };
+		E7D055ABB82BE9058195E6B129A94A9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EDCCEA8E051BD952AFBE32B1FF9C381D /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0E633D4B29428BD6FDD93D248E14C5 /* DefaultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		131ECC9B46F5BBE511E420B7BA83E2F9 /* PBXContainerItemProxy */ = {
+		65CE07F554ED27F6DA820D308F68F7BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,63 +47,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0283434BA9E828B3EBED9041DD667825 /* +String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+String.swift"; path = "KyuGenericExtensions/Classes/+String.swift"; sourceTree = "<group>"; };
+		03981F4565A40A9803DF71D10CAAB621 /* SlidableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlidableView.swift; sourceTree = "<group>"; };
 		0EA96988D9DB0E7141048AAF9253B936 /* KyuGenericExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KyuGenericExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E07A5326F46558E254E7C4465CF5BC /* +UITableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UITableViewCell.swift"; path = "KyuGenericExtensions/Classes/+UITableViewCell.swift"; sourceTree = "<group>"; };
 		140B87D7AD1CF53A691E329E97CED9DC /* Pods-KyuGenericExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KyuGenericExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1FE48C94BC71D2CB8174856925AB7CE5 /* Pods-KyuGenericExtensions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KyuGenericExtensions_Example.modulemap"; sourceTree = "<group>"; };
-		258DF5B65395D7A4BED127E246955038 /* +UITableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UITableViewCell.swift"; path = "KyuGenericExtensions/Classes/+UITableViewCell.swift"; sourceTree = "<group>"; };
-		2C2A0D15638BC9D6851E28B368D3F49E /* Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		2E032237575A6DCFE1DAB49368B7B161 /* +UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIViewController.swift"; path = "KyuGenericExtensions/Classes/+UIViewController.swift"; sourceTree = "<group>"; };
+		2555FB2740D1E12A754F4DD8A3B61DF3 /* +UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIColor.swift"; path = "KyuGenericExtensions/Classes/+UIColor.swift"; sourceTree = "<group>"; };
+		2D1BA3606D1819D47BAC88882D6C71F6 /* KyuGenericExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KyuGenericExtensions-umbrella.h"; sourceTree = "<group>"; };
+		2DB5E073105898FCAA664692D7219980 /* +Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Array.swift"; path = "KyuGenericExtensions/Classes/+Array.swift"; sourceTree = "<group>"; };
+		2FE24969F08920B06B388C4439A7E3DF /* KyuGenericExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KyuGenericExtensions.modulemap; sourceTree = "<group>"; };
+		31DCB9DEA60BAB5D5A688075A7670257 /* +Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Double.swift"; path = "KyuGenericExtensions/Classes/+Double.swift"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3336EFF69790834E8B3BC69D9A240CFC /* +UINavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UINavigationController.swift"; path = "KyuGenericExtensions/Classes/+UINavigationController.swift"; sourceTree = "<group>"; };
-		3C1163C95C9578C30094F1144A63C3D9 /* +UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIView.swift"; path = "KyuGenericExtensions/Classes/+UIView.swift"; sourceTree = "<group>"; };
-		42773DFA969367DBAA393BBB434E3548 /* Defaults+Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Defaults+Application.swift"; sourceTree = "<group>"; };
-		44DBC2CFE62B3D7E03F8EF9C10D6516D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		45F78666E75B75265AAAFF14281EFE07 /* KyuGenericExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KyuGenericExtensions-dummy.m"; sourceTree = "<group>"; };
-		53139721098C14A50AE54D70867FE063 /* KyuGenericExtensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KyuGenericExtensions-Info.plist"; sourceTree = "<group>"; };
-		5385DA9D6D8429AF79C8153BC8F3FC45 /* KyuGenericExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KyuGenericExtensions-umbrella.h"; sourceTree = "<group>"; };
+		32A252D814A6F45038078157C59825D4 /* DefaultViewController+SlidableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "DefaultViewController+SlidableView.swift"; sourceTree = "<group>"; };
+		44CF6DA269D0707F9778661FB491F0F4 /* KyuGenericExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KyuGenericExtensions.debug.xcconfig; sourceTree = "<group>"; };
+		4C1D3BD9165DA02C200C9C866F548876 /* +UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIView.swift"; path = "KyuGenericExtensions/Classes/+UIView.swift"; sourceTree = "<group>"; };
 		5F104256DEA88FA601BD6D1761B18AB8 /* Pods-KyuGenericExtensions_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KyuGenericExtensions_Example-Info.plist"; sourceTree = "<group>"; };
-		625BF7E9684C5BAA9767B8724E28A65A /* +Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Double.swift"; path = "KyuGenericExtensions/Classes/+Double.swift"; sourceTree = "<group>"; };
-		69A478BEAC411DA66AC66A6B64EDEFF9 /* KyuGenericExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KyuGenericExtensions.modulemap; sourceTree = "<group>"; };
-		6CDA9E337746D225C5EB525B0830CBBB /* +UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIColor.swift"; path = "KyuGenericExtensions/Classes/+UIColor.swift"; sourceTree = "<group>"; };
-		6F636362D549CF7A740665E5D3F4F80D /* KyuGenericExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KyuGenericExtensions.debug.xcconfig; sourceTree = "<group>"; };
+		6068E99BB2E835DF2DC0D30E2ECEC493 /* KyuGenericExtensions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KyuGenericExtensions-Info.plist"; sourceTree = "<group>"; };
+		6DBC000395C7E97B86A0EB17AEBC8DC7 /* +UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UILabel.swift"; path = "KyuGenericExtensions/Classes/+UILabel.swift"; sourceTree = "<group>"; };
 		7676BB434FB1A1B92C6608AB8AE124D2 /* Pods-KyuGenericExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KyuGenericExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7B341D61ACA4E51665425573091BE350 /* Pods-KyuGenericExtensions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KyuGenericExtensions_Example-dummy.m"; sourceTree = "<group>"; };
-		83E4C47470E5612EC2B2C6BE866B0E18 /* PagingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		8AE7B16EA4DD63DF9C3285F05EAF8542 /* KyuGenericExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KyuGenericExtensions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8C0E633D4B29428BD6FDD93D248E14C5 /* DefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
+		8C1C236346C3407B2EE50CCA17376BE1 /* +UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UICollectionView.swift"; path = "KyuGenericExtensions/Classes/+UICollectionView.swift"; sourceTree = "<group>"; };
+		95CCB9C8970A890B622065EC43FE7B5C /* KyuGenericExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KyuGenericExtensions-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB9E1BDBA54F485D215A65383A33FD9 /* Pods-KyuGenericExtensions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KyuGenericExtensions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A0EC3B2824F4207600E071B0 /* +UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "+UIStoryboard.swift"; path = "KyuGenericExtensions/Classes/+UIStoryboard.swift"; sourceTree = "<group>"; };
-		A0EC3B2924F4207600E071B0 /* +UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "+UICollectionView.swift"; path = "KyuGenericExtensions/Classes/+UICollectionView.swift"; sourceTree = "<group>"; };
-		A876F8464D9CE5093BB33F0094B8F7A1 /* KyuGenericExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KyuGenericExtensions-prefix.pch"; sourceTree = "<group>"; };
-		A8F900084F17F8827C3DE29A8427F4FF /* +Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Date.swift"; path = "KyuGenericExtensions/Classes/+Date.swift"; sourceTree = "<group>"; };
-		B2441A04255BD152BD21BF433BEC50E3 /* +UISplitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UISplitViewController.swift"; path = "KyuGenericExtensions/Classes/+UISplitViewController.swift"; sourceTree = "<group>"; };
-		B3A51903AC97E24921DF22F9DFC9C817 /* +UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UITableView.swift"; path = "KyuGenericExtensions/Classes/+UITableView.swift"; sourceTree = "<group>"; };
+		A06E5C1F2515F0E50053908E /* +UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "+UIWindow.swift"; path = "KyuGenericExtensions/Classes/+UIWindow.swift"; sourceTree = "<group>"; };
+		A06E5C232515F4FD0053908E /* +UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "+UIApplication.swift"; path = "KyuGenericExtensions/Classes/+UIApplication.swift"; sourceTree = "<group>"; };
+		A281356BFCC02E5AB4E6A413B3E36A5B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A8A072E999A08FCA659A9BD08B48C8CB /* PagingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		B32CD3D5BB33ABF3A93A4F0E0AA72939 /* KyuGenericExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KyuGenericExtensions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB77E403EA5C9A85A6D3C8FA4DEC38E7 /* Pods-KyuGenericExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KyuGenericExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C0F0D7785A656EAA473AADC956F4CA78 /* Defaults+DateFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Defaults+DateFormat.swift"; sourceTree = "<group>"; };
-		C1D1CD0B0A927EA25A3C9BA3EBFF8E81 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C20AE4E57F3A9D13109DE64786E191B8 /* +UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UILabel.swift"; path = "KyuGenericExtensions/Classes/+UILabel.swift"; sourceTree = "<group>"; };
-		C43756D46556AD19FC35AC472A36E626 /* +Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Array.swift"; path = "KyuGenericExtensions/Classes/+Array.swift"; sourceTree = "<group>"; };
-		CC672B60693414EB2A7EC16E6627DF5B /* +String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+String.swift"; path = "KyuGenericExtensions/Classes/+String.swift"; sourceTree = "<group>"; };
+		C082928BC580102E92732EA69BCF170C /* KyuGenericExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KyuGenericExtensions-dummy.m"; sourceTree = "<group>"; };
+		C1BF6C6899FF80D1F0E484E1B35E180A /* +UIStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIStoryboard.swift"; path = "KyuGenericExtensions/Classes/+UIStoryboard.swift"; sourceTree = "<group>"; };
+		C74FBCF501BC45823C6E700F0BBAC693 /* +UISplitViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UISplitViewController.swift"; path = "KyuGenericExtensions/Classes/+UISplitViewController.swift"; sourceTree = "<group>"; };
+		D48692B32BB8F5F263ABC62F66B17C35 /* +UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UITableView.swift"; path = "KyuGenericExtensions/Classes/+UITableView.swift"; sourceTree = "<group>"; };
 		D77F22F4AFE3071996395721386F3A23 /* Pods-KyuGenericExtensions_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KyuGenericExtensions_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D90C430F62FCA2B3A37335997C8FCFF5 /* Pods-KyuGenericExtensions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KyuGenericExtensions_Example-umbrella.h"; sourceTree = "<group>"; };
-		DF2FFB6DE90C1AF27ACB017228700BB7 /* KyuGenericExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KyuGenericExtensions.release.xcconfig; sourceTree = "<group>"; };
+		E3D493D2316F4B915525B4230D28B03A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E56EC3E834659732FE6F562FCEF9799F /* +UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UIViewController.swift"; path = "KyuGenericExtensions/Classes/+UIViewController.swift"; sourceTree = "<group>"; };
+		E89AF920A45D441106919B86659F9922 /* KyuGenericExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KyuGenericExtensions.release.xcconfig; sourceTree = "<group>"; };
+		F3EBEF6D92A91793C3BBFCD831C321D5 /* +UINavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+UINavigationController.swift"; path = "KyuGenericExtensions/Classes/+UINavigationController.swift"; sourceTree = "<group>"; };
+		F63BD0B00FEDCBF2E6ABB8E92DF0A7BE /* +Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "+Date.swift"; path = "KyuGenericExtensions/Classes/+Date.swift"; sourceTree = "<group>"; };
 		F9A9081DAB040841C2EFFB2DAB12B684 /* Pods_KyuGenericExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KyuGenericExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC1C429BD32EAB017CD1AFACC4BDEAC /* Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C3A2F70A7D1CAFDD1590B4C491028F1D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F64C2CE54502B0546FF0D084E3B2F3C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D1DC894EBC801A011B29FB15EA5092BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6C5E2200FCD071C9E7187A23CEE9E2F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF32B61B6FF46261469EFA7578B3224A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D055ABB82BE9058195E6B129A94A9F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,30 +130,62 @@
 			path = "Target Support Files/Pods-KyuGenericExtensions_Example";
 			sourceTree = "<group>";
 		};
-		9602E4A2C803328392FDB3AC96DBDF2D /* KyuGenericExtensions */ = {
+		2C4008471CE363E0DC66898804371A52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C43756D46556AD19FC35AC472A36E626 /* +Array.swift */,
-				A8F900084F17F8827C3DE29A8427F4FF /* +Date.swift */,
-				625BF7E9684C5BAA9767B8724E28A65A /* +Double.swift */,
-				CC672B60693414EB2A7EC16E6627DF5B /* +String.swift */,
-				6CDA9E337746D225C5EB525B0830CBBB /* +UIColor.swift */,
-				C20AE4E57F3A9D13109DE64786E191B8 /* +UILabel.swift */,
-				3336EFF69790834E8B3BC69D9A240CFC /* +UINavigationController.swift */,
-				B2441A04255BD152BD21BF433BEC50E3 /* +UISplitViewController.swift */,
-				B3A51903AC97E24921DF22F9DFC9C817 /* +UITableView.swift */,
-				A0EC3B2924F4207600E071B0 /* +UICollectionView.swift */,
-				A0EC3B2824F4207600E071B0 /* +UIStoryboard.swift */,
-				258DF5B65395D7A4BED127E246955038 /* +UITableViewCell.swift */,
-				3C1163C95C9578C30094F1144A63C3D9 /* +UIView.swift */,
-				2E032237575A6DCFE1DAB49368B7B161 /* +UIViewController.swift */,
-				B65985C3E49CAAB6715A779DCA2CF27F /* Custom */,
-				F23C4626EEE20EA416E1EFB78255F128 /* Defaults */,
-				AB8C9B8138EF7717BC40D2192BBE2149 /* Pod */,
-				ECF920AE0C247F1C735212D4540BB716 /* Support Files */,
+				2E38D3E11D1D3AF7E2997D4689323868 /* DefaultViewController */,
+				FF920CB5511D4E0563049BBA16A32D33 /* PagingCollectionViewFlowLayout */,
+			);
+			name = Controllers;
+			path = KyuGenericExtensions/Classes/Controllers;
+			sourceTree = "<group>";
+		};
+		2E38D3E11D1D3AF7E2997D4689323868 /* DefaultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C0E633D4B29428BD6FDD93D248E14C5 /* DefaultViewController.swift */,
+				32A252D814A6F45038078157C59825D4 /* DefaultViewController+SlidableView.swift */,
+			);
+			path = DefaultViewController;
+			sourceTree = "<group>";
+		};
+		582B663B9E0D42C309D3ECF9D17E897B /* KyuGenericExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5E073105898FCAA664692D7219980 /* +Array.swift */,
+				F63BD0B00FEDCBF2E6ABB8E92DF0A7BE /* +Date.swift */,
+				31DCB9DEA60BAB5D5A688075A7670257 /* +Double.swift */,
+				0283434BA9E828B3EBED9041DD667825 /* +String.swift */,
+				A06E5C232515F4FD0053908E /* +UIApplication.swift */,
+				8C1C236346C3407B2EE50CCA17376BE1 /* +UICollectionView.swift */,
+				2555FB2740D1E12A754F4DD8A3B61DF3 /* +UIColor.swift */,
+				6DBC000395C7E97B86A0EB17AEBC8DC7 /* +UILabel.swift */,
+				F3EBEF6D92A91793C3BBFCD831C321D5 /* +UINavigationController.swift */,
+				C74FBCF501BC45823C6E700F0BBAC693 /* +UISplitViewController.swift */,
+				C1BF6C6899FF80D1F0E484E1B35E180A /* +UIStoryboard.swift */,
+				D48692B32BB8F5F263ABC62F66B17C35 /* +UITableView.swift */,
+				12E07A5326F46558E254E7C4465CF5BC /* +UITableViewCell.swift */,
+				4C1D3BD9165DA02C200C9C866F548876 /* +UIView.swift */,
+				E56EC3E834659732FE6F562FCEF9799F /* +UIViewController.swift */,
+				A06E5C1F2515F0E50053908E /* +UIWindow.swift */,
+				2C4008471CE363E0DC66898804371A52 /* Controllers */,
+				AB3DC80EBED245C704CDD27E126C77DD /* Defaults */,
+				706C29E8A98EB3D9B984D06F0E460471 /* Pod */,
+				D9D9AD0CAF4700697C0560500D33A804 /* Support Files */,
+				AA950406977316E127ADEFC719CF6AC4 /* Views */,
 			);
 			name = KyuGenericExtensions;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		706C29E8A98EB3D9B984D06F0E460471 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B32CD3D5BB33ABF3A93A4F0E0AA72939 /* KyuGenericExtensions.podspec */,
+				A281356BFCC02E5AB4E6A413B3E36A5B /* LICENSE */,
+				E3D493D2316F4B915525B4230D28B03A /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		98980FB236DDCEF51F83A41D4ECD3458 /* Products */ = {
@@ -159,31 +197,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AE6E85ABB0EB0EDAD4421D10672BEB0 /* Development Pods */ = {
+		AA950406977316E127ADEFC719CF6AC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9602E4A2C803328392FDB3AC96DBDF2D /* KyuGenericExtensions */,
+				FBC93AA3AD278255A11B26E9877369FC /* SlidableView */,
 			);
-			name = "Development Pods";
+			name = Views;
+			path = KyuGenericExtensions/Classes/Views;
 			sourceTree = "<group>";
 		};
-		AB8C9B8138EF7717BC40D2192BBE2149 /* Pod */ = {
+		AB3DC80EBED245C704CDD27E126C77DD /* Defaults */ = {
 			isa = PBXGroup;
 			children = (
-				8AE7B16EA4DD63DF9C3285F05EAF8542 /* KyuGenericExtensions.podspec */,
-				44DBC2CFE62B3D7E03F8EF9C10D6516D /* LICENSE */,
-				C1D1CD0B0A927EA25A3C9BA3EBFF8E81 /* README.md */,
+				FCC1C429BD32EAB017CD1AFACC4BDEAC /* Defaults.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B65985C3E49CAAB6715A779DCA2CF27F /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				83E4C47470E5612EC2B2C6BE866B0E18 /* PagingCollectionViewFlowLayout.swift */,
-			);
-			name = Custom;
-			path = KyuGenericExtensions/Classes/Custom;
+			name = Defaults;
+			path = KyuGenericExtensions/Classes/Defaults;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -198,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9AE6E85ABB0EB0EDAD4421D10672BEB0 /* Development Pods */,
+				F3E8F5AB02DA1EE8FF9330B9DC7F2A50 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				98980FB236DDCEF51F83A41D4ECD3458 /* Products */,
 				DEF4DB47CE99B641D9BAE3278DF173FE /* Targets Support Files */,
@@ -213,6 +242,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9D9AD0CAF4700697C0560500D33A804 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE24969F08920B06B388C4439A7E3DF /* KyuGenericExtensions.modulemap */,
+				C082928BC580102E92732EA69BCF170C /* KyuGenericExtensions-dummy.m */,
+				6068E99BB2E835DF2DC0D30E2ECEC493 /* KyuGenericExtensions-Info.plist */,
+				95CCB9C8970A890B622065EC43FE7B5C /* KyuGenericExtensions-prefix.pch */,
+				2D1BA3606D1819D47BAC88882D6C71F6 /* KyuGenericExtensions-umbrella.h */,
+				44CF6DA269D0707F9778661FB491F0F4 /* KyuGenericExtensions.debug.xcconfig */,
+				E89AF920A45D441106919B86659F9922 /* KyuGenericExtensions.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KyuGenericExtensions";
+			sourceTree = "<group>";
+		};
 		DEF4DB47CE99B641D9BAE3278DF173FE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,35 +265,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ECF920AE0C247F1C735212D4540BB716 /* Support Files */ = {
+		F3E8F5AB02DA1EE8FF9330B9DC7F2A50 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				69A478BEAC411DA66AC66A6B64EDEFF9 /* KyuGenericExtensions.modulemap */,
-				45F78666E75B75265AAAFF14281EFE07 /* KyuGenericExtensions-dummy.m */,
-				53139721098C14A50AE54D70867FE063 /* KyuGenericExtensions-Info.plist */,
-				A876F8464D9CE5093BB33F0094B8F7A1 /* KyuGenericExtensions-prefix.pch */,
-				5385DA9D6D8429AF79C8153BC8F3FC45 /* KyuGenericExtensions-umbrella.h */,
-				6F636362D549CF7A740665E5D3F4F80D /* KyuGenericExtensions.debug.xcconfig */,
-				DF2FFB6DE90C1AF27ACB017228700BB7 /* KyuGenericExtensions.release.xcconfig */,
+				582B663B9E0D42C309D3ECF9D17E897B /* KyuGenericExtensions */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KyuGenericExtensions";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F23C4626EEE20EA416E1EFB78255F128 /* Defaults */ = {
+		FBC93AA3AD278255A11B26E9877369FC /* SlidableView */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A0D15638BC9D6851E28B368D3F49E /* Defaults.swift */,
-				42773DFA969367DBAA393BBB434E3548 /* Defaults+Application.swift */,
-				C0F0D7785A656EAA473AADC956F4CA78 /* Defaults+DateFormat.swift */,
+				03981F4565A40A9803DF71D10CAAB621 /* SlidableView.swift */,
 			);
-			name = Defaults;
-			path = KyuGenericExtensions/Classes/Defaults;
+			path = SlidableView;
+			sourceTree = "<group>";
+		};
+		FF920CB5511D4E0563049BBA16A32D33 /* PagingCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A8A072E999A08FCA659A9BD08B48C8CB /* PagingCollectionViewFlowLayout.swift */,
+			);
+			path = PagingCollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		482AF89E2E4BCF2C32430D884924916F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F47BB6A7874216197CB34C7B9BB7BD3 /* KyuGenericExtensions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49450A9EF6FEF994C23F7CBE6BD9F034 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,25 +308,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58F9565B299DCFB25BF04138FF223128 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B7D0C52BBD3DB4A84E6CDB64C7854D30 /* KyuGenericExtensions-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4510F84B06CA7F068E44B71D38D9BB2A /* KyuGenericExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E9FFEA71505B55CF865273D27A0CFF1 /* Build configuration list for PBXNativeTarget "KyuGenericExtensions" */;
+			buildConfigurationList = F681461B25725FABD90A40B3B9CAAF87 /* Build configuration list for PBXNativeTarget "KyuGenericExtensions" */;
 			buildPhases = (
-				58F9565B299DCFB25BF04138FF223128 /* Headers */,
-				BF2BFAC4CC11BD77B7851DF0FA583672 /* Sources */,
-				C3A2F70A7D1CAFDD1590B4C491028F1D /* Frameworks */,
-				7CBBB6290D00C6347C65700A76796B3C /* Resources */,
+				482AF89E2E4BCF2C32430D884924916F /* Headers */,
+				E9D8F5ADD68769650AF0E31C561E1527 /* Sources */,
+				FF32B61B6FF46261469EFA7578B3224A /* Frameworks */,
+				C1918E8A18D94D75CCEA387983BE653D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -299,7 +341,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E40F292E8DC47CF171DF10B667DCCB30 /* PBXTargetDependency */,
+				FC8D777492EBED595125162CC3ACAB37 /* PBXTargetDependency */,
 			);
 			name = "Pods-KyuGenericExtensions_Example";
 			productName = "Pods-KyuGenericExtensions_Example";
@@ -342,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CBBB6290D00C6347C65700A76796B3C /* Resources */ = {
+		C1918E8A18D94D75CCEA387983BE653D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,29 +394,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF2BFAC4CC11BD77B7851DF0FA583672 /* Sources */ = {
+		E9D8F5ADD68769650AF0E31C561E1527 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3277B2E61C50AEF32A5C4E5A1FA63542 /* +Array.swift in Sources */,
-				EDD65F46B2BCCEB507DF27422BF69D6C /* +Date.swift in Sources */,
-				FDF607F84D616E9B1458DD35622DB8B8 /* +Double.swift in Sources */,
-				828E85F8A94DBC7D3B915CF1A39A09BF /* +String.swift in Sources */,
-				5DEC05476DD0FA9B876398AD2B9ABA71 /* +UIColor.swift in Sources */,
-				9FC3A28A3327FC62B6D74ADC7F43E7A3 /* +UILabel.swift in Sources */,
-				C923529F0BFF96AFE521C96595AD55C5 /* +UINavigationController.swift in Sources */,
-				B397C9B335F19C69F2EDEEC532C8D96C /* +UISplitViewController.swift in Sources */,
-				132F129158521A3FAB353D980F7CA8D5 /* +UITableView.swift in Sources */,
-				9E102B460257EE631926C07419E8F9F8 /* +UITableViewCell.swift in Sources */,
-				1B659506B6C6B7D6D7D80FD5F66D452A /* +UIView.swift in Sources */,
-				074748FF4768F81647B14410A4C1A038 /* +UIViewController.swift in Sources */,
-				7A73BA3C0D9D28D9999F3E975630A812 /* Defaults+Application.swift in Sources */,
-				A8A7FDE6FECF8AEE04E1C2E19D24367A /* Defaults+DateFormat.swift in Sources */,
-				0955D36CEAC160B7F669F1D9437D0528 /* Defaults.swift in Sources */,
-				A0EC3B2B24F4207600E071B0 /* +UICollectionView.swift in Sources */,
-				0CCAD8EE57446B2B01E950484B8B050C /* KyuGenericExtensions-dummy.m in Sources */,
-				A0EC3B2A24F4207600E071B0 /* +UIStoryboard.swift in Sources */,
-				F3E673A04EA27202C264FC386DAB7883 /* PagingCollectionViewFlowLayout.swift in Sources */,
+				78516C45A4169AA2A60DFCF30A92CE28 /* +Array.swift in Sources */,
+				BE8307031962DDA2DBCC81E8D358D30D /* +Date.swift in Sources */,
+				1AAC993691339E605714652D78203D71 /* +Double.swift in Sources */,
+				7748F6896313C1D754E3898BDB4B843A /* +String.swift in Sources */,
+				A06E5C202515F0E50053908E /* +UIWindow.swift in Sources */,
+				E6C1692724B16D60D16F55DC5413067D /* +UICollectionView.swift in Sources */,
+				2DF846695194A6C257CB8BE135DD044B /* +UIColor.swift in Sources */,
+				758809757F2BD47F78FACCF3E907404A /* +UILabel.swift in Sources */,
+				466FCA5058ACE0274E878447D1751F5D /* +UINavigationController.swift in Sources */,
+				17B2C5B909C72CAE554D95DF4E323B88 /* +UISplitViewController.swift in Sources */,
+				426E25FDF2A262F49382FA5414998B7D /* +UIStoryboard.swift in Sources */,
+				DEDFA92FB7BE6C0EB8C95C23B5CEB5D8 /* +UITableView.swift in Sources */,
+				A06E5C242515F4FD0053908E /* +UIApplication.swift in Sources */,
+				90E3083039BCF5F0447DF11C00D9ED8C /* +UITableViewCell.swift in Sources */,
+				8BEB68C0B155D9CCA2EDC04E84A2DBF7 /* +UIView.swift in Sources */,
+				D6F7594B878A47F356D1D1FF0F4A6721 /* +UIViewController.swift in Sources */,
+				83B1F69A8AA0EA77E90CA3A694A7DD24 /* DefaultViewController+SlidableView.swift in Sources */,
+				EDCCEA8E051BD952AFBE32B1FF9C381D /* DefaultViewController.swift in Sources */,
+				142AFA1370678034C935B8CEC6D23099 /* Defaults.swift in Sources */,
+				1E036C10DB194D6804D92B27D8B22E00 /* KyuGenericExtensions-dummy.m in Sources */,
+				D5E81564A8FB82CBE9159070010AD50E /* PagingCollectionViewFlowLayout.swift in Sources */,
+				43FCEBE5865E6BF40892AF0BE8CA9804 /* SlidableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,16 +434,213 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E40F292E8DC47CF171DF10B667DCCB30 /* PBXTargetDependency */ = {
+		FC8D777492EBED595125162CC3ACAB37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KyuGenericExtensions;
 			target = 4510F84B06CA7F068E44B71D38D9BB2A /* KyuGenericExtensions */;
-			targetProxy = 131ECC9B46F5BBE511E420B7BA83E2F9 /* PBXContainerItemProxy */;
+			targetProxy = 65CE07F554ED27F6DA820D308F68F7BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+		082343F5A3920705D3D0A1A8F092F11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140B87D7AD1CF53A691E329E97CED9DC /* Pods-KyuGenericExtensions_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		67AA41885FC68F02F80C1185AC7B6C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CF6DA269D0707F9778661FB491F0F4 /* KyuGenericExtensions.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions.modulemap";
+				PRODUCT_MODULE_NAME = KyuGenericExtensions;
+				PRODUCT_NAME = KyuGenericExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EA01693A2064F4464D274A3E006F487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89AF920A45D441106919B86659F9922 /* KyuGenericExtensions.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions.modulemap";
+				PRODUCT_MODULE_NAME = KyuGenericExtensions;
+				PRODUCT_NAME = KyuGenericExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC468AAE5D183FFFA2AE969C6EB5B91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7676BB434FB1A1B92C6608AB8AE124D2 /* Pods-KyuGenericExtensions_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -449,7 +691,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,220 +704,14 @@
 			};
 			name = Debug;
 		};
-		1C2084A20AA61E178F29A3F9C3539A16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF2FFB6DE90C1AF27ACB017228700BB7 /* KyuGenericExtensions.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions.modulemap";
-				PRODUCT_MODULE_NAME = KyuGenericExtensions;
-				PRODUCT_NAME = KyuGenericExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		82980CC49AA3D30229D162F39AF30707 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F636362D549CF7A740665E5D3F4F80D /* KyuGenericExtensions.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KyuGenericExtensions/KyuGenericExtensions.modulemap";
-				PRODUCT_MODULE_NAME = KyuGenericExtensions;
-				PRODUCT_NAME = KyuGenericExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CD7BD8298AEBC5AFF75B90F83B49A0E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140B87D7AD1CF53A691E329E97CED9DC /* Pods-KyuGenericExtensions_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		F261EF7BA166DE77153C1CDBEECBAD6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7676BB434FB1A1B92C6608AB8AE124D2 /* Pods-KyuGenericExtensions_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KyuGenericExtensions_Example/Pods-KyuGenericExtensions_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E9FFEA71505B55CF865273D27A0CFF1 /* Build configuration list for PBXNativeTarget "KyuGenericExtensions" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82980CC49AA3D30229D162F39AF30707 /* Debug */,
-				1C2084A20AA61E178F29A3F9C3539A16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
-				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -683,8 +719,17 @@
 		CA66537CDEB949ACA2131150FC9378E6 /* Build configuration list for PBXNativeTarget "Pods-KyuGenericExtensions_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F261EF7BA166DE77153C1CDBEECBAD6C /* Debug */,
-				CD7BD8298AEBC5AFF75B90F83B49A0E9 /* Release */,
+				DC468AAE5D183FFFA2AE969C6EB5B91F /* Debug */,
+				082343F5A3920705D3D0A1A8F092F11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F681461B25725FABD90A40B3B9CAAF87 /* Build configuration list for PBXNativeTarget "KyuGenericExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AA41885FC68F02F80C1185AC7B6C65 /* Debug */,
+				6EA01693A2064F4464D274A3E006F487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

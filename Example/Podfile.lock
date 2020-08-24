@@ -1,5 +1,5 @@
 PODS:
-  - KyuGenericExtensions (0.3.0)
+  - KyuGenericExtensions (1.0.2)
 
 DEPENDENCIES:
   - KyuGenericExtensions (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KyuGenericExtensions: a426f5cd74ab8c2b0c1fd1d5101d0c4a184e3aea
+  KyuGenericExtensions: 0279613a9d0d3e28a1d808c7e633c8e40347b88b
 
 PODFILE CHECKSUM: 005ee30fd5ebd7e9f7221aea92b88de4b4df54f3
 
