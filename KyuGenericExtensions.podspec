@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KyuGenericExtensions'
-  s.version          = '1.0.8'
+  s.version          = '1.1.2'
   s.swift_version    = '5'
   s.summary          = 'The Swift Extensions.'
 
@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chayanon Ardkham' => 'develop@chayanon.dev' }
   s.source           = { :git => 'https://github.com/kyuuuyki/KyuGenericExtensions.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.chayanon.dev'
+#  s.social_media_url = 'https://twitter.chayanon.dev'
 
   s.ios.deployment_target = '13.0'
 

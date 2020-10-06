@@ -3,16 +3,12 @@
 <p>
   <!---<img src="https://img.shields.io/cocoapods/dt/KyuGenericExtensions.svg?maxAge=86400" alt="Downloads"/>--->  
   <!---<img src="https://img.shields.io/cocoapods/at/KyuGenericExtensions.svg?maxAge=86400" alt="Apps"/>--->
-  <a href="https://cocoapods.org/pods/KyuGenericExtensions"><img src="https://img.shields.io/cocoapods/v/KyuGenericExtensions.svg?style=flat" alt="Language: Swift 4.2+" /></a>
-  <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-4.2+-4BC51D.svg?style=flat" alt="Language: Swift 4.2+" /></a>
-  <img src="https://img.shields.io/badge/iOS-12+-blue.svg?style=flat" alt="Platform: iOS 12+"/>
+  <a href="https://cocoapods.org/pods/KyuGenericExtensions"><img src="https://img.shields.io/cocoapods/v/KyuGenericExtensions.svg?style=flat" alt="Language: Swift 5+" /></a>
+  <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift-5+-4BC51D.svg?style=flat" alt="Language: Swift 5+" /></a>
+  <img src="https://img.shields.io/badge/iOS-13+-blue.svg?style=flat" alt="Platform: iOS 13+"/>
   <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" />
   <a href="https://twitter.chayanon.dev"><img src="https://img.shields.io/badge/twitter-kyuuuyki-blue.svg?style=flat" alt="Twitter: kyuuuyki" /></a> <br><br>
 </p>
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
@@ -28,7 +24,7 @@ it, simply add the following line to your Podfile:
 ### Swift 5
 
 ```ruby
-pod 'KyuGenericExtensions', '~> 1.0.0'
+pod 'KyuGenericExtensions'
 ```
 
 ## Author
