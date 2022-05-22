@@ -1,0 +1,40 @@
+//
+//  KSPActivityIndicatorCollectionViewCell.swift
+//  KyuGenericExtensions
+//
+
+import Foundation
+import UIKit
+
+class KSPActivityIndicatorCollectionViewCell: UICollectionViewCell {
+	// MARK: MODEL
+	var viewModel: KSPActivityIndicatorCollectionViewCellViewModelProtocol? {
+		didSet {
+			updateView()
+		}
+	}
+	
+	// MARK: VIEW
+	@IBOutlet private weak var cellActivityIndicator: UIActivityIndicatorView!
+	
+	// MARK: LIFE CYCLE
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		configureView()
+	}
+}
+
+private extension KSPActivityIndicatorCollectionViewCell {
+	func configureView() {
+	}
+	
+	func updateView() {
+		guard let viewModel = viewModel else { return }
+		
+		if viewModel.shouldAnimated {
+			cellActivityIndicator.startAnimating()
+		} else {
+			cellActivityIndicator.stopAnimating()
+		}
+	}
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ash-WG-YCj" customClass="KSPTextCollectionViewCell" customModule="KyuGenericExtensions">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ey3-fn-f47">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guu-6l-OYT">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="guu-6l-OYT" firstAttribute="top" secondItem="Ey3-fn-f47" secondAttribute="top" id="51v-Ga-WhQ"/>
+                    <constraint firstAttribute="trailing" secondItem="guu-6l-OYT" secondAttribute="trailing" id="Jwr-kk-Y7M"/>
+                    <constraint firstAttribute="bottom" secondItem="guu-6l-OYT" secondAttribute="bottom" id="Q8g-NZ-hEV"/>
+                    <constraint firstItem="guu-6l-OYT" firstAttribute="leading" secondItem="Ey3-fn-f47" secondAttribute="leading" id="hh3-Jc-IYU"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="cellTextLabel" destination="guu-6l-OYT" id="WSA-Y4-Hed"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="97"/>
+        </collectionViewCell>
+    </objects>
+</document>
