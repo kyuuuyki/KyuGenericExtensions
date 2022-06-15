@@ -4,12 +4,20 @@
 //  KyuGenericExtensions
 //
 
+//  swiftlint:disable line_length
+
 import Foundation
 import UIKit
 
 // MARK: - Date to String
 public extension String {
-	/// Get TimeString from Date.
+	/**
+	 Returns a string representation of a specified date.
+	 - parameter date: The date to format.
+	 - parameter format: The date format for represented date.
+	 - parameter calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
+	 - parameter timeZone: The timezone for represented date. If unspecified, the system time zone is used.
+	 */
 	init(
 		date: Date,
 		format: String,
@@ -29,7 +37,11 @@ public extension String {
 
 // MARK: - String to QRCode Image
 public extension String {
-	/// Get QRCode Image from String.
+	/**
+	 Return QRCode image representation of current string.
+	 - parameter size: Size of the generated image.
+	 - parameter correctionLevel: Input correction level for the generated image.
+	 */
 	func toQRCodeImage(of size: CGSize, correctionLevel: String = "Q") -> UIImage? {
 		let data = self.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
 		let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -61,47 +73,27 @@ public extension String {
 
 // MARK: - Check if String contains other String
 public extension String {
-	/// Check if String contains other String.
+	/**
+	 Finds and returns the boolean indicating whether current string contains a specified substring.
+	 - parameter string: Substring to find.
+	 - parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
+	 - returns: Boolean for checking result. `true` if current string contains specified substring.
+	 */
 	func contains(string: String, insensitive: Bool = false) -> Bool {
 		if insensitive {
 			return range(of: string, options: .caseInsensitive) != nil
 		}
-		
 		return range(of: string) != nil
-	}
-}
-
-// MARK: - Split String by other String
-public extension String {
-	/// Split String by other String.
-	func split(by separator: Set<String>) -> [String] {
-		var string = ""
-		var desiredOutput = [String]()
-		
-		for character in self {
-			if separator.contains(String(character)) {
-				if !string.isEmpty {
-					desiredOutput.append(string)
-				}
-				
-				desiredOutput.append(String(character))
-				string = ""
-			} else {
-				string += String(character)
-			}
-		}
-		
-		if !string.isEmpty {
-			desiredOutput.append(string)
-		}
-		
-		return desiredOutput
 	}
 }
 
 // MARK: - Calculate width and height from String
 public extension String {
-	/// Calculate height from String.
+	/**
+	 Returns calculated maximum height of current string for specified width and font.
+	 - parameter width: Maximum width for each line.
+	 - parameter font: Font for target string.
+	 */
 	func height(width: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
 		let boundingBox = self.boundingRect(
@@ -110,11 +102,14 @@ public extension String {
 			attributes: [NSAttributedString.Key.font: font],
 			context: nil
 		)
-		
 		return ceil(boundingBox.height)
 	}
 	
-	/// Calculate width from String.
+	/**
+	 Returns calculated maximum width of current string for specified height and font.
+	 - parameter height: Maximum height for all lines.
+	 - parameter font: Font for target string.
+	 */
 	func width(height: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
 		let boundingBox = self.boundingRect(
@@ -123,7 +118,6 @@ public extension String {
 			attributes: [NSAttributedString.Key.font: font],
 			context: nil
 		)
-		
 		return ceil(boundingBox.width)
 	}
 }

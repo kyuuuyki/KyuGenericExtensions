@@ -9,17 +9,17 @@ import UIKit
 
 // MARK: - Application's version info
 public extension UIApplication {
-	/// Current application.
+	/// The singleton app instance.
 	static func application() -> UIApplication {
 		return UIApplication.shared
 	}
 	
-	/// Version number.
+	/// Returns the version number specified in the receiver's information property list.
 	var versionNumber: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
 	}
 	
-	/// Build number.
+	/// Returns the build number specified in the receiver's information property list.
 	var buildNumber: String? {
 		return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
 	}
@@ -27,12 +27,11 @@ public extension UIApplication {
 
 // MARK: - Application's rootViewController
 public extension UIApplication {
-	/// Get the top-most presenting `ViewController`.
-	///
-	/// - Parameters:
-	/// 	- controller: Controller that you need to get it's top-most presenting `ViewController`.
-	/// - Returns: A top-most presenting `ViewController`.
-	///
+	/**
+	 Get the top-most presenting `UIViewController`.
+	 - parameter controller: Controller to get it's top-most presenting ViewController.
+	 - returns: A top-most presenting `UIViewController`.
+	 */
 	class func topViewController(
 		controller: UIViewController? = UIApplication.shared.window?.rootViewController
 	) -> UIViewController? {
@@ -55,7 +54,7 @@ public extension UIApplication {
 
 // MARK: - Application's window
 public extension UIApplication {
-	/// Current window.
+	/// The app's currently connected scenes' keyWindow.
 	var window: UIWindow? {
 		return UIApplication
 			.shared
