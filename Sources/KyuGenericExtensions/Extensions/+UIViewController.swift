@@ -46,7 +46,8 @@ public extension UIViewController {
 	func displayAlertWithErrorStyle(
 		title: String? = nil,
 		message: String? = nil,
-		confirmButtonTitle: String? = nil
+		confirmButtonTitle: String? = nil,
+		handler: (() -> Void)? = nil
 	) {
 		let alert = UIAlertController(
 			title: title ?? "Oops!",
@@ -56,9 +57,10 @@ public extension UIViewController {
 		
 		let action = UIAlertAction(
 			title: confirmButtonTitle ?? "Oh, Okay.",
-			style: .default,
-			handler: nil
-		)
+			style: .default
+		) { _ in
+			handler?()
+		}
 		alert.addAction(action)
 		
 		present(alert, animated: true, completion: nil)
