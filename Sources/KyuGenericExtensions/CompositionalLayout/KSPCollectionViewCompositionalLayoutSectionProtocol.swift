@@ -26,4 +26,20 @@ public protocol KSPCollectionViewCompositionalLayoutSectionProtocol {
 		_ collectionView: UICollectionView,
 		layoutForSectionAt sectionIndex: Int
 	) -> NSCollectionLayoutSection
+	
+	func compositionalLayoutSection(
+		_ collectionView: UICollectionView,
+		viewForSupplementaryElementOfKind kind: String,
+		at indexPath: IndexPath
+	) -> UICollectionReusableView
+}
+
+public extension KSPCollectionViewCompositionalLayoutSectionProtocol {
+	func compositionalLayoutSection(
+		_ collectionView: UICollectionView,
+		viewForSupplementaryElementOfKind kind: String,
+		at indexPath: IndexPath
+	) -> UICollectionReusableView {
+		return UICollectionReusableView()
+	}
 }

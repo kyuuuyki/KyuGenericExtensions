@@ -55,4 +55,17 @@ open class KSPCollectionViewCompositionalLayoutController:
 			cellForItemAt: indexPath
 		)
 	}
+	
+	open dynamic func collectionView(
+		_ collectionView: UICollectionView,
+		viewForSupplementaryElementOfKind kind: String,
+		at indexPath: IndexPath
+	) -> UICollectionReusableView {
+		guard let collectionViewLayout = collectionViewLayout else { return UICollectionReusableView() }
+		return collectionViewLayout.sections[indexPath.section].compositionalLayoutSection(
+			collectionView,
+			viewForSupplementaryElementOfKind: kind,
+			at: indexPath
+		)
+	}
 }

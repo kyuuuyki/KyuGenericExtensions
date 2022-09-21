@@ -50,6 +50,35 @@ public extension UICollectionView {
 			for: indexPath
 		) as? T
 	}
+	
+	func register<T: UICollectionReusableView>(
+		_ supplementaryView: T.Type,
+		forSupplementaryViewOfKind elementKind: String? = nil,
+		withReuseIdentifier identifier: String? = nil
+	) {
+		let resolvedElementKind = elementKind ?? String(describing: supplementaryView)
+		let resolvedReuseIdentifier = identifier ?? String(describing: supplementaryView)
+		register(
+			supplementaryView,
+			forSupplementaryViewOfKind: resolvedElementKind,
+			withReuseIdentifier: resolvedReuseIdentifier
+		)
+	}
+	
+	func dequeueReusableSupplementaryView<T: UICollectionReusableView>(
+		_ supplementaryView: T.Type,
+		ofKind elementKind: String? = nil,
+		withReuseIdentifier identifier: String? = nil,
+		for indexPath: IndexPath
+	) -> T? {
+		let resolvedElementKind = elementKind ?? String(describing: supplementaryView)
+		let resolvedReuseIdentifier = identifier ?? String(describing: supplementaryView)
+		return dequeueReusableSupplementaryView(
+			ofKind: resolvedElementKind,
+			withReuseIdentifier: resolvedReuseIdentifier,
+			for: indexPath
+		) as? T
+	}
 }
 
 // MARK: - Compositional Layout
