@@ -7,9 +7,9 @@ import AVKit
 import Foundation
 import UIKit
 
-class KSPVideoCollectionViewCell: UICollectionViewCell {
+public class KSPVideoCollectionViewCell: UICollectionViewCell {
 	// MARK: MODEL
-	var viewModel: KSPVideoCollectionViewCellViewModelProtocol? {
+	public var viewModel: KSPVideoCollectionViewCellViewModelProtocol? {
 		didSet {
 			updateView()
 		}
@@ -18,12 +18,12 @@ class KSPVideoCollectionViewCell: UICollectionViewCell {
 	// MARK: VIEW
 	
 	// MARK: LIFE CYCLE
-	override func awakeFromNib() {
+	override public func awakeFromNib() {
 		super.awakeFromNib()
 		configureView()
 	}
 	
-	override func prepareForReuse() {
+	override public func prepareForReuse() {
 		super.prepareForReuse()
 		removeVideoView()
 	}

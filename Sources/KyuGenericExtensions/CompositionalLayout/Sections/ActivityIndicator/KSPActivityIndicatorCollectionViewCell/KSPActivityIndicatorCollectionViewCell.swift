@@ -6,9 +6,9 @@
 import Foundation
 import UIKit
 
-class KSPActivityIndicatorCollectionViewCell: UICollectionViewCell {
+public class KSPActivityIndicatorCollectionViewCell: UICollectionViewCell {
 	// MARK: MODEL
-	var viewModel: KSPActivityIndicatorCollectionViewCellViewModelProtocol? {
+	public var viewModel: KSPActivityIndicatorCollectionViewCellViewModelProtocol? {
 		didSet {
 			updateView()
 		}
@@ -18,7 +18,7 @@ class KSPActivityIndicatorCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var cellActivityIndicator: UIActivityIndicatorView!
 	
 	// MARK: LIFE CYCLE
-	override func awakeFromNib() {
+	override public func awakeFromNib() {
 		super.awakeFromNib()
 		configureView()
 	}

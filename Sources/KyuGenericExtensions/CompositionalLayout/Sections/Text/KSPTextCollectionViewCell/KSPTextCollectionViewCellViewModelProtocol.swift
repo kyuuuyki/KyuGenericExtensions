@@ -6,14 +6,8 @@
 import Foundation
 import UIKit
 
-protocol KSPTextCollectionViewCellViewModelProtocol {
+public protocol KSPTextCollectionViewCellViewModelProtocol {
 	var text: String? { get }
 	var textColor: UIColor { get }
 	var font: UIFont { get }
-}
-
-struct KSPTextCollectionViewCellViewModel: KSPTextCollectionViewCellViewModelProtocol {
-	let text: String?
-	let textColor: UIColor
-	let font: UIFont
 }

@@ -80,30 +80,3 @@ public extension UICollectionView {
 		) as? T
 	}
 }
-
-// MARK: - Compositional Layout
-public extension UICollectionView {
-	/**
-	 Changes the collection view’s layout and notifies you when the animations complete.
-	 - parameter compositionalLayout: The new layout object for the collection view.
-	 - parameter animated: Specify `true` if you want to animate changes from the current layout to the new layout specified by the layout parameter. Specify false to make the change without animations.
-	 - parameter completion: The block that is executed when the layout transition finishes or is aborted by the user.
-	 */
-	func setCollectionViewLayout(
-		_ compositionalLayout: KSPCollectionViewCompositionalLayoutProtocol,
-		animated: Bool,
-		completion: ((Bool) -> Void)?
-	) {
-		let layout = UICollectionViewCompositionalLayout { [weak self] sectionIndex, _ in
-			guard let self = self else { return nil }
-			let section = compositionalLayout.sections[sectionIndex]
-			section.compositionalLayoutSection(self, prepareForSectionAt: sectionIndex)
-			return section.compositionalLayoutSection(
-				self,
-				layoutForSectionAt: sectionIndex
-			)
-		}
-		setCollectionViewLayout(layout, animated: animated, completion: completion)
-		reloadData()
-	}
-}

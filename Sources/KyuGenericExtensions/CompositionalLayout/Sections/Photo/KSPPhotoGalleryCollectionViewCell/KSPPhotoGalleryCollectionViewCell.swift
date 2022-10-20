@@ -6,9 +6,9 @@
 import Foundation
 import UIKit
 
-class KSPPhotoGalleryCollectionViewCell: UICollectionViewCell {
+public class KSPPhotoGalleryCollectionViewCell: UICollectionViewCell {
 	// MARK: MODEL
-	var viewModel: KSPPhotoGalleryCollectionViewCellViewModelProtocol? {
+	public var viewModel: KSPPhotoGalleryCollectionViewCellViewModelProtocol? {
 		didSet {
 			updateView()
 		}
@@ -18,7 +18,7 @@ class KSPPhotoGalleryCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var cellImageView: UIImageView!
 	
 	// MARK: LIFE CYCLE
-	override func awakeFromNib() {
+	override public func awakeFromNib() {
 		super.awakeFromNib()
 		configureView()
 	}

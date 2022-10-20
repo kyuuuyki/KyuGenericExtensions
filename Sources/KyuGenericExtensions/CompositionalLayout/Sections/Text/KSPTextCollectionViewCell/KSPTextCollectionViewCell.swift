@@ -6,9 +6,9 @@
 import Foundation
 import UIKit
 
-class KSPTextCollectionViewCell: UICollectionViewCell {
+public class KSPTextCollectionViewCell: UICollectionViewCell {
 	// MARK: MODEL
-	var viewModel: KSPTextCollectionViewCellViewModelProtocol? {
+	public var viewModel: KSPTextCollectionViewCellViewModelProtocol? {
 		didSet {
 			updateView()
 		}
@@ -18,7 +18,7 @@ class KSPTextCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var cellTextLabel: UILabel!
 	
 	// MARK: LIFE CYCLE
-	override func awakeFromNib() {
+	override public func awakeFromNib() {
 		super.awakeFromNib()
 		configureView()
 	}

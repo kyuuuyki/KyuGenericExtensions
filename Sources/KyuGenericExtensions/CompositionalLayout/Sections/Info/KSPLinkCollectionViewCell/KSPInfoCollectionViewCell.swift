@@ -6,9 +6,9 @@
 import Foundation
 import UIKit
 
-class KSPInfoCollectionViewCell: UICollectionViewCell {
+public class KSPInfoCollectionViewCell: UICollectionViewCell {
 	// MARK: MODEL
-	var viewModel: KSPInfoCollectionViewCellViewModelProtocol? {
+	public var viewModel: KSPInfoCollectionViewCellViewModelProtocol? {
 		didSet {
 			updateView()
 		}
@@ -22,7 +22,7 @@ class KSPInfoCollectionViewCell: UICollectionViewCell {
 	@IBOutlet private weak var cellSeparatorView: UIView!
 	
 	// MARK: LIFE CYCLE
-	override func awakeFromNib() {
+	override public func awakeFromNib() {
 		super.awakeFromNib()
 		configureView()
 	}

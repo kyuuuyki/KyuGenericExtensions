@@ -11,18 +11,17 @@ import UIKit
 
 // MARK: - Initialization
 public extension UIView {
-	private class func initFromNib<T: UIView>(_ viewClass: T.Type) -> T? {
-		return Bundle(
-			for: viewClass).loadNibNamed(
-				String(describing: viewClass),
-				owner: nil,
-				options: nil
-			)?.first as? T
+	private class func initFromNib<T: UIView>(_ viewClass: T.Type, bundle: Bundle) -> T? {
+		return bundle.loadNibNamed(
+			String(describing: viewClass),
+			owner: nil,
+			options: nil
+		)?.first as? T
 	}
 	
 	/// Initialize view by ClassName.
-	class func initFromNib() -> Self? {
-		return initFromNib(self)
+	class func initFromNib(bundle: Bundle? = nil) -> Self? {
+		return initFromNib(self, bundle: bundle ?? .main)
 	}
 }
 
