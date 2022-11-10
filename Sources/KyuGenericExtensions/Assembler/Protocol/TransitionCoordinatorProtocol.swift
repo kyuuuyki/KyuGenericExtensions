@@ -21,6 +21,6 @@ public extension TransitionCoordinatorProtocol {
 			return nil
 		}
 		
-		return sceneModule.build(with: parameters)
+		return sceneModule.build(resolver: resolver, parameters: parameters)
 	}
 }

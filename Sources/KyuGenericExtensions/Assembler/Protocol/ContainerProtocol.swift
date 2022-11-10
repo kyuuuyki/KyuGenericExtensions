@@ -6,7 +6,7 @@
 import Foundation
 
 public protocol ContainerProtocol: ResolverProtocol {
-	/// Remove all modules in `Container`.
+	/// Remove all registered modules from `Container`.
 	func removeAll()
 	
 	/// Register the module into `Container`.
