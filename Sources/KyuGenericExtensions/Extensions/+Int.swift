@@ -12,7 +12,8 @@ public extension Int {
 		var value = Double(self)
 		for unit in units {
 			if value < 1000 {
-				return String(format: "%.\(decimalPoints)f%@", value, unit)
+				var string = String(format: "%.\(decimalPoints)f%@", value, unit)
+				return string.replacingOccurrences(of: ".0\(unit)", with: unit)
 			}
 			value /= 1000
 		}

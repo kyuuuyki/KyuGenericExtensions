@@ -20,14 +20,14 @@ public extension UICollectionView {
 	func register<T: UICollectionViewCell>(
 		_ cell: T.Type,
 		bundle: Bundle? = nil,
-		forCellWithReuseIdentifier reuseIdentifier: String? = nil
+		forCellWithReuseIdentifier identifier: String? = nil
 	) {
-		let resolvedReuseIdentifier = reuseIdentifier ?? String(describing: cell)
+		let resolvedReuseIdentifier = identifier ?? String(describing: cell)
 		let resolvedBundle = bundle ?? Bundle(for: cell)
 		
-		if resolvedBundle.path(forResource: resolvedReuseIdentifier, ofType: "nib") != nil {
+		if resolvedBundle.path(forResource: String(describing: cell), ofType: "nib") != nil {
 			register(
-				UINib(nibName: resolvedReuseIdentifier, bundle: resolvedBundle),
+				UINib(nibName: String(describing: cell), bundle: resolvedBundle),
 				forCellWithReuseIdentifier: resolvedReuseIdentifier
 			)
 		} else {
@@ -43,10 +43,12 @@ public extension UICollectionView {
 	 */
 	func dequeueReusableCell<T: UICollectionViewCell>(
 		_ cell: T.Type,
-		indexPath: IndexPath
+		withReuseIdentifier identifier: String? = nil,
+		for indexPath: IndexPath
 	) -> T? {
+		let resolvedReuseIdentifier = identifier ?? String(describing: cell)
 		return dequeueReusableCell(
-			withReuseIdentifier: String(describing: cell),
+			withReuseIdentifier: resolvedReuseIdentifier,
 			for: indexPath
 		) as? T
 	}
