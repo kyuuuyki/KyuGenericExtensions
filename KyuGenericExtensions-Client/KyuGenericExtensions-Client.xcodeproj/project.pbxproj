@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C535B47529ED447D000103DC /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C535B47429ED447D000103DC /* Assembler.swift */; };
+		C535B47729ED4492000103DC /* TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C535B47629ED4492000103DC /* TransitionCoordinator.swift */; };
 		C554242B283CE424000CD77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554242A283CE424000CD77B /* AppDelegate.swift */; };
 		C554242D283CE424000CD77B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554242C283CE424000CD77B /* SceneDelegate.swift */; };
-		C554242F283CE424000CD77B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554242E283CE424000CD77B /* ViewController.swift */; };
+		C554242F283CE424000CD77B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554242E283CE424000CD77B /* ContentView.swift */; };
 		C5542432283CE424000CD77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5542430283CE424000CD77B /* Main.storyboard */; };
 		C5542434283CE426000CD77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5542433283CE426000CD77B /* Assets.xcassets */; };
 		C5542437283CE426000CD77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5542435283CE426000CD77B /* LaunchScreen.storyboard */; };
 		C5542442283CE458000CD77B /* KyuGenericExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = C5542441283CE458000CD77B /* KyuGenericExtensions */; };
+		C5AF634B29FD280000AC4CEC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF634A29FD280000AC4CEC /* ContentViewController.swift */; };
+		C5E682F029F298090044588B /* ContentSceneModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E682EF29F298090044588B /* ContentSceneModule.swift */; };
+		C5E6830629F298BE0044588B /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E682FF29F298BE0044588B /* ContentPresenter.swift */; };
+		C5E6830729F298BE0044588B /* ContentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6830029F298BE0044588B /* ContentWorker.swift */; };
+		C5E6830829F298BE0044588B /* ContentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6830129F298BE0044588B /* ContentRouter.swift */; };
+		C5E6830B29F298BE0044588B /* ContentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6830429F298BE0044588B /* ContentInteractor.swift */; };
+		C5E6830C29F298BE0044588B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6830529F298BE0044588B /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C535B47429ED447D000103DC /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		C535B47629ED4492000103DC /* TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
 		C5542427283CE424000CD77B /* KyuGenericExtensions-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KyuGenericExtensions-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C554242A283CE424000CD77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C554242C283CE424000CD77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C554242E283CE424000CD77B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C554242E283CE424000CD77B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5542431283CE424000CD77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5542433283CE426000CD77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5542436283CE426000CD77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5542438283CE426000CD77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C554243F283CE43E000CD77B /* KyuGenericExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KyuGenericExtensions; path = ..; sourceTree = "<group>"; };
+		C5AF634A29FD280000AC4CEC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C5E682EF29F298090044588B /* ContentSceneModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSceneModule.swift; sourceTree = "<group>"; };
+		C5E682FF29F298BE0044588B /* ContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
+		C5E6830029F298BE0044588B /* ContentWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWorker.swift; sourceTree = "<group>"; };
+		C5E6830129F298BE0044588B /* ContentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRouter.swift; sourceTree = "<group>"; };
+		C5E6830429F298BE0044588B /* ContentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInteractor.swift; sourceTree = "<group>"; };
+		C5E6830529F298BE0044588B /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C535B47329ED4463000103DC /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				C535B47429ED447D000103DC /* Assembler.swift */,
+				C535B47629ED4492000103DC /* TransitionCoordinator.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
 		C554241E283CE424000CD77B = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +90,8 @@
 			children = (
 				C554242A283CE424000CD77B /* AppDelegate.swift */,
 				C554242C283CE424000CD77B /* SceneDelegate.swift */,
-				C554242E283CE424000CD77B /* ViewController.swift */,
+				C535B47329ED4463000103DC /* Assembler */,
+				C5E682EC29F297380044588B /* ContentView */,
 				C5542430283CE424000CD77B /* Main.storyboard */,
 				C5542433283CE426000CD77B /* Assets.xcassets */,
 				C5542435283CE426000CD77B /* LaunchScreen.storyboard */,
@@ -85,6 +113,21 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5E682EC29F297380044588B /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				C554242E283CE424000CD77B /* ContentView.swift */,
+				C5AF634A29FD280000AC4CEC /* ContentViewController.swift */,
+				C5E682EF29F298090044588B /* ContentSceneModule.swift */,
+				C5E682FF29F298BE0044588B /* ContentPresenter.swift */,
+				C5E6830029F298BE0044588B /* ContentWorker.swift */,
+				C5E6830129F298BE0044588B /* ContentRouter.swift */,
+				C5E6830429F298BE0044588B /* ContentInteractor.swift */,
+				C5E6830529F298BE0044588B /* ContentModel.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +226,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C554242F283CE424000CD77B /* ViewController.swift in Sources */,
+				C5E6830B29F298BE0044588B /* ContentInteractor.swift in Sources */,
+				C535B47529ED447D000103DC /* Assembler.swift in Sources */,
+				C554242F283CE424000CD77B /* ContentView.swift in Sources */,
+				C5E6830C29F298BE0044588B /* ContentModel.swift in Sources */,
+				C5AF634B29FD280000AC4CEC /* ContentViewController.swift in Sources */,
+				C5E6830629F298BE0044588B /* ContentPresenter.swift in Sources */,
+				C5E6830729F298BE0044588B /* ContentWorker.swift in Sources */,
 				C554242B283CE424000CD77B /* AppDelegate.swift in Sources */,
+				C535B47729ED4492000103DC /* TransitionCoordinator.swift in Sources */,
 				C554242D283CE424000CD77B /* SceneDelegate.swift in Sources */,
+				C5E682F029F298090044588B /* ContentSceneModule.swift in Sources */,
+				C5E6830829F298BE0044588B /* ContentRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 37XGWFUP5M;
+				DEVELOPMENT_TEAM = FHB8SG5L4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KyuGenericExtensions-Client/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -362,7 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 37XGWFUP5M;
+				DEVELOPMENT_TEAM = FHB8SG5L4X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KyuGenericExtensions-Client/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

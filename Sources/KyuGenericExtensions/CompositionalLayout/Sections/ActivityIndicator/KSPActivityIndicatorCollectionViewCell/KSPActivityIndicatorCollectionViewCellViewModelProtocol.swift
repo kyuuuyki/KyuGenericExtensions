@@ -3,6 +3,8 @@
 //  KyuGenericExtensions
 //
 
+//  swiftlint:disable type_name
+
 import Foundation
 import UIKit
 
