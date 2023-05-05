@@ -17,6 +17,9 @@
 		C5542437283CE426000CD77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5542435283CE426000CD77B /* LaunchScreen.storyboard */; };
 		C5542442283CE458000CD77B /* KyuGenericExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = C5542441283CE458000CD77B /* KyuGenericExtensions */; };
 		C5AF634B29FD280000AC4CEC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AF634A29FD280000AC4CEC /* ContentViewController.swift */; };
+		C5E0B44F2A04F67B00DBFC16 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C5E0B44E2A04F67B00DBFC16 /* .swiftlint.yml */; };
+		C5E0B4512A04F94300DBFC16 /* build.yml in Resources */ = {isa = PBXBuildFile; fileRef = C5E0B4502A04F94300DBFC16 /* build.yml */; };
+		C5E0B4532A0503D000DBFC16 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5E0B4522A0503D000DBFC16 /* README.md */; };
 		C5E682F029F298090044588B /* ContentSceneModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E682EF29F298090044588B /* ContentSceneModule.swift */; };
 		C5E6830629F298BE0044588B /* ContentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E682FF29F298BE0044588B /* ContentPresenter.swift */; };
 		C5E6830729F298BE0044588B /* ContentWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6830029F298BE0044588B /* ContentWorker.swift */; };
@@ -38,6 +41,9 @@
 		C5542438283CE426000CD77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C554243F283CE43E000CD77B /* KyuGenericExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KyuGenericExtensions; path = ..; sourceTree = "<group>"; };
 		C5AF634A29FD280000AC4CEC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C5E0B44E2A04F67B00DBFC16 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C5E0B4502A04F94300DBFC16 /* build.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
+		C5E0B4522A0503D000DBFC16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C5E682EF29F298090044588B /* ContentSceneModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSceneModule.swift; sourceTree = "<group>"; };
 		C5E682FF29F298BE0044588B /* ContentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPresenter.swift; sourceTree = "<group>"; };
 		C5E6830029F298BE0044588B /* ContentWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWorker.swift; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 		C554241E283CE424000CD77B = {
 			isa = PBXGroup;
 			children = (
+				C5E0B4522A0503D000DBFC16 /* README.md */,
+				C5E0B44E2A04F67B00DBFC16 /* .swiftlint.yml */,
+				C5E0B44A2A04F65E00DBFC16 /* .github */,
 				C554243E283CE43E000CD77B /* Packages */,
 				C5542429283CE424000CD77B /* KyuGenericExtensions-Client */,
 				C5542428283CE424000CD77B /* Products */,
@@ -113,6 +122,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5E0B44A2A04F65E00DBFC16 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0B44B2A04F65E00DBFC16 /* workflows */,
+			);
+			name = .github;
+			path = ../.github;
+			sourceTree = "<group>";
+		};
+		C5E0B44B2A04F65E00DBFC16 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0B4502A04F94300DBFC16 /* build.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 		C5E682EC29F297380044588B /* ContentView */ = {
@@ -192,6 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E0B4532A0503D000DBFC16 /* README.md in Resources */,
+				C5E0B4512A04F94300DBFC16 /* build.yml in Resources */,
+				C5E0B44F2A04F67B00DBFC16 /* .swiftlint.yml in Resources */,
 				C5542437283CE426000CD77B /* LaunchScreen.storyboard in Resources */,
 				C5542434283CE426000CD77B /* Assets.xcassets in Resources */,
 				C5542432283CE424000CD77B /* Main.storyboard in Resources */,
