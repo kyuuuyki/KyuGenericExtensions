@@ -10,6 +10,7 @@ public protocol ResolverProtocol {
 	///
 	/// - Parameters:
 	/// 	- moduleType: Registered module's type.
+	///
 	/// - Returns: A module which registered using privided moduleType.
 	///
 	func resolve<Module>(_ moduleType: Module.Type) -> Module?
@@ -19,6 +20,7 @@ public protocol ResolverProtocol {
 	/// - Parameters:
 	/// 	- moduleType: Registered module's type.
 	/// 	- name: Registered module's name.
+	/// 	
 	/// - Returns: A module which registered using privided `moduleType` and `name`.
 	///
 	func resolve<Module>(_ moduleType: Module.Type, name: String?) -> Module?

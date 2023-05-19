@@ -11,13 +11,14 @@ import UIKit
 
 // MARK: - Date to String
 public extension String {
-	/**
-	 Returns a string representation of a specified date.
-	 - parameter date: The date to format.
-	 - parameter format: The date format for represented date.
-	 - parameter calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
-	 - parameter timeZone: The timezone for represented date. If unspecified, the system time zone is used.
-	 */
+	/// Returns a string representation of a specified date.
+	///
+	/// - Parameters:
+	/// 	- date: The date to format.
+	/// 	- format: The date format for represented date.
+	/// 	- calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
+	/// 	- timeZone: The timezone for represented date. If unspecified, the system time zone is used.
+	/// 	
 	init(
 		date: Date,
 		format: String,
@@ -37,11 +38,14 @@ public extension String {
 
 // MARK: - String to QRCode Image
 public extension String {
-	/**
-	 Return QRCode image representation of current string.
-	 - parameter size: Size of the generated image.
-	 - parameter correctionLevel: Input correction level for the generated image.
-	 */
+	/// Return QRCode image representation of current string.
+	///
+	/// - Parameters:
+	/// 	- size: Size of the generated image.
+	/// 	- correctionLevel: Input correction level for the generated image.
+	///
+	/// - Returns: Generated QRCode Image
+	///
 	func toQRCodeImage(of size: CGSize, correctionLevel: String = "Q") -> UIImage? {
 		let data = self.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
 		let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -73,12 +77,14 @@ public extension String {
 
 // MARK: - Check if String contains other String
 public extension String {
-	/**
-	 Finds and returns the boolean indicating whether current string contains a specified substring.
-	 - parameter string: Substring to find.
-	 - parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
-	 - returns: Boolean for checking result. `true` if current string contains specified substring.
-	 */
+	/// Finds and returns the boolean indicating whether current string contains a specified substring.
+	///
+	/// - Parameters:
+	/// 	- string: Substring to find.
+	/// 	- parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
+	///
+	/// - Returns: Boolean for checking result. `true` if current string contains specified substring.
+	///
 	func contains(string: String, insensitive: Bool = false) -> Bool {
 		if insensitive {
 			return range(of: string, options: .caseInsensitive) != nil
@@ -89,11 +95,14 @@ public extension String {
 
 // MARK: - Calculate width and height from String
 public extension String {
-	/**
-	 Returns calculated maximum height of current string for specified width and font.
-	 - parameter width: Maximum width for each line.
-	 - parameter font: Font for target string.
-	 */
+	/// Returns calculated maximum height of current string for specified width and font.
+	///
+	/// - Parameters:
+	/// 	- width: Maximum width for each line.
+	/// 	- font: Font for target string.
+	///
+	/// - Returns: Calculated height of the string.
+	///
 	func height(width: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
 		let boundingBox = self.boundingRect(
@@ -105,11 +114,13 @@ public extension String {
 		return ceil(boundingBox.height)
 	}
 	
-	/**
-	 Returns calculated maximum width of current string for specified height and font.
-	 - parameter height: Maximum height for all lines.
-	 - parameter font: Font for target string.
-	 */
+	/// Returns calculated maximum width of current string for specified height and font.
+	/// - Parameters:
+	/// 	- height: Maximum height for all lines.
+	/// 	- font: Font for target string.
+	///
+	/// - Returns: Calculated width of the string.
+	///
 	func width(height: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
 		let boundingBox = self.boundingRect(

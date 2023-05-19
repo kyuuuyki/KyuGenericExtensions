@@ -10,13 +10,13 @@ import Foundation
 
 // MARK: - Date from String
 public extension Date {
-	/**
-	 Returns a date representation of a specified string.
-	 - parameter date: The string to format.
-	 - parameter format: The date format for represented string.
-	 - parameter calendar: The calendar for represented string. If unspecified, the logical calendar for the current user is used.
-	 - parameter timeZone: The timezone for represented string. If unspecified, the system time zone is used.
-	 */
+	/// Returns a date representation of a specified string.
+	/// - Parameters:
+	/// 	- date: The string to format.
+	/// 	- format: The date format for represented string.
+	/// 	- calendar: The calendar for represented string. If unspecified, the logical calendar for the current user is used.
+	/// 	- timeZone: The timezone for represented string. If unspecified, the system time zone is used.
+	///
 	init?(
 		string: String,
 		format: String...,

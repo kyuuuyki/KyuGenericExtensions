@@ -8,6 +8,11 @@ import Foundation
 import UIKit
 
 public extension UIButton {
+	/// Set the font of current button.
+	///
+	/// - Parameters:
+	/// 	- font: Selected `UIFont`.
+	///
 	@available(iOS 15.0, *)
 	func setTitleFont(_ font: UIFont) {
 		let transformer = UIConfigurationTextAttributesTransformer { incoming in
