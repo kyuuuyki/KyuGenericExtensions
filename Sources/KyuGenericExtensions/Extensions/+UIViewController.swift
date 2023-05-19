@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Hide keyboard when tapping outside input field
@@ -75,3 +76,4 @@ public extension UIViewController {
 		}
 	}
 }
+#endif

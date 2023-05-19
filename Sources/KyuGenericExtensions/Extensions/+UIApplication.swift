@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Application's version info
@@ -65,3 +66,4 @@ public extension UIApplication {
 			.first { $0.isKeyWindow }
 	}
 }
+#endif

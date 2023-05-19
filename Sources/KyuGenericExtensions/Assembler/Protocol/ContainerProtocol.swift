@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// The protocol defines a container that holds all registered modules.
 public protocol ContainerProtocol: ResolverProtocol {
 	/// Remove all registered modules from `Container`.
 	func removeAll()

@@ -3,6 +3,7 @@
 //  KyuGenericExtensions
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public protocol StoryboardInstantiable {
@@ -21,3 +22,4 @@ public extension StoryboardInstantiable {
 		return storyboard.instantiateViewController(withIdentifier: storyboardIdentifier) as? Self
 	}
 }
+#endif

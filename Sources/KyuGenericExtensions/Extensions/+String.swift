@@ -7,34 +7,8 @@
 //  swiftlint:disable line_length
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
-
-// MARK: - Date to String
-public extension String {
-	/// Returns a string representation of a specified date.
-	///
-	/// - Parameters:
-	/// 	- date: The date to format.
-	/// 	- format: The date format for represented date.
-	/// 	- calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
-	/// 	- timeZone: The timezone for represented date. If unspecified, the system time zone is used.
-	/// 	
-	init(
-		date: Date,
-		format: String,
-		locale: Locale = Locale(identifier: "en_US_POSIX"),
-		calendar: Calendar = Calendar(identifier: .gregorian),
-		timeZone: TimeZone = TimeZone(identifier: "UTC")!
-	) {
-		let formatter = DateFormatter()
-		formatter.dateFormat = format
-		formatter.locale = locale
-		formatter.calendar = calendar
-		formatter.timeZone = timeZone
-		
-		self = formatter.string(from: date)
-	}
-}
 
 // MARK: - String to QRCode Image
 public extension String {
@@ -75,24 +49,6 @@ public extension String {
 	}
 }
 
-// MARK: - Check if String contains other String
-public extension String {
-	/// Finds and returns the boolean indicating whether current string contains a specified substring.
-	///
-	/// - Parameters:
-	/// 	- string: Substring to find.
-	/// 	- parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
-	///
-	/// - Returns: Boolean for checking result. `true` if current string contains specified substring.
-	///
-	func contains(string: String, insensitive: Bool = false) -> Bool {
-		if insensitive {
-			return range(of: string, options: .caseInsensitive) != nil
-		}
-		return range(of: string) != nil
-	}
-}
-
 // MARK: - Calculate width and height from String
 public extension String {
 	/// Returns calculated maximum height of current string for specified width and font.
@@ -130,5 +86,51 @@ public extension String {
 			context: nil
 		)
 		return ceil(boundingBox.width)
+	}
+}
+#endif
+
+// MARK: - Date to String
+public extension String {
+	/// Returns a string representation of a specified date.
+	///
+	/// - Parameters:
+	/// 	- date: The date to format.
+	/// 	- format: The date format for represented date.
+	/// 	- calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
+	/// 	- timeZone: The timezone for represented date. If unspecified, the system time zone is used.
+	/// 	
+	init(
+		date: Date,
+		format: String,
+		locale: Locale = Locale(identifier: "en_US_POSIX"),
+		calendar: Calendar = Calendar(identifier: .gregorian),
+		timeZone: TimeZone = TimeZone(identifier: "UTC")!
+	) {
+		let formatter = DateFormatter()
+		formatter.dateFormat = format
+		formatter.locale = locale
+		formatter.calendar = calendar
+		formatter.timeZone = timeZone
+		
+		self = formatter.string(from: date)
+	}
+}
+
+// MARK: - Check if String contains other String
+public extension String {
+	/// Finds and returns the boolean indicating whether current string contains a specified substring.
+	///
+	/// - Parameters:
+	/// 	- string: Substring to find.
+	/// 	- parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
+	///
+	/// - Returns: Boolean for checking result. `true` if current string contains specified substring.
+	///
+	func contains(string: String, insensitive: Bool = false) -> Bool {
+		if insensitive {
+			return range(of: string, options: .caseInsensitive) != nil
+		}
+		return range(of: string) != nil
 	}
 }

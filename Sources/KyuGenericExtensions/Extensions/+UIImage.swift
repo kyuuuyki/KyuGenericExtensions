@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 public extension UIImage {
@@ -48,3 +49,4 @@ public extension UIImage {
 		)
 	}
 }
+#endif

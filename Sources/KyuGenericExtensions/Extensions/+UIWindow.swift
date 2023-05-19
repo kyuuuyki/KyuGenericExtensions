@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Override UserInterfaceStyle
@@ -24,3 +25,4 @@ public extension UIWindow {
 		})
 	}
 }
+#endif

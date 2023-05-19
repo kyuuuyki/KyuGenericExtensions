@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Initialization
@@ -143,3 +144,4 @@ public extension UIColor {
 		return UIColor(red: newRed, green: newGreen, blue: newBlue, alpha: 1)
 	}
 }
+#endif

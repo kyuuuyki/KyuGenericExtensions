@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - SplitView Ratio
@@ -38,3 +39,4 @@ public extension UISplitViewController {
 		view.addSubview(separatorView)
 	}
 }
+#endif

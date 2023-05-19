@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Configure Cells
@@ -44,3 +45,4 @@ public extension UITableView {
 		}
 	}
 }
+#endif

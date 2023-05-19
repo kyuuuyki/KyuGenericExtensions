@@ -4,8 +4,11 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
+// swiftlint:disable:next line_length
+/// The protocol defines a module with a more specific capability of building and returning viewcontroller.
 public protocol SceneModuleProtocol: ModuleProtocol {
 	/// Build the `ViewController` with specified parameters.
 	///
@@ -17,3 +20,4 @@ public protocol SceneModuleProtocol: ModuleProtocol {
 	///
 	func build(resolver: ResolverProtocol, parameters: [String: Any]?) -> UIViewController?
 }
+#endif

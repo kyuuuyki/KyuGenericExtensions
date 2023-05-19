@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Set inversed-color for Text based on BackgroundColor
@@ -30,3 +31,4 @@ public extension UILabel {
 		}
 	}
 }
+#endif

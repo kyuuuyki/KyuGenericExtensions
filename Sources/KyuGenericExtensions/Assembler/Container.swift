@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// The default implementation of the container that conforms to the ``ContainerProtocol``.
 public final class Container: ContainerProtocol {
 	public init() {}
 	private var modules = [ModuleKey: Any]()

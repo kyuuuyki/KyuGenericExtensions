@@ -7,6 +7,7 @@
 //  swiftlint:disable line_length
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Configure Cells
@@ -103,3 +104,4 @@ public extension UICollectionView {
 		) as? T
 	}
 }
+#endif

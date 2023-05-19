@@ -7,6 +7,7 @@
 //  swiftlint:disable function_parameter_count cyclomatic_complexity
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 // MARK: - Initialization
@@ -266,3 +267,4 @@ public extension UIView {
 		}
 	}
 }
+#endif

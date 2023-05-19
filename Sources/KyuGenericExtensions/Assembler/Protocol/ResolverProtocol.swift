@@ -5,6 +5,8 @@
 
 import Foundation
 
+// swiftlint:disable:next line_length
+/// The protocol enables specific classes to have the ability to resolve registered modules from the container of an Assembler.
 public protocol ResolverProtocol {
 	/// Resolve the module from `Resolver`.
 	///

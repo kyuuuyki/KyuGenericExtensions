@@ -5,6 +5,7 @@
 //
 
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 public extension UIButton {
@@ -23,3 +24,4 @@ public extension UIButton {
 		configuration?.titleTextAttributesTransformer = transformer
 	}
 }
+#endif
