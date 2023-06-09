@@ -1,0 +1,234 @@
+@Tutorial(time: 25) {
+    @Intro(title: "Building a Demo Application") {
+		This tutorial guides you how to build an application utilizing modularized scenes management with _Assembler_.
+		@Image(source: assembler-essentials-chapter-banner.png)
+    }
+    
+    @Section(title: "Create a new project using KyuSwiftTemplates") {
+        @ContentAndMedia {
+			Create an Xcode project and proceed with the configuration. 
+			
+			If you have not yet installed KyuSwiftTemplates, please visit <doc:Installing-Templates>.
+        }
+        
+        @Steps {
+            @Step {
+				Create a new project using the KyuSwiftTemplate's App template.
+                @Image(source: assembler-essentials-demo-choose-app-template.png)
+            }
+			
+			@Step {
+				Enter "AssemblerDemo" as the product name then choose the directory for the "AssemblerDemo" project and click "Create".
+				@Image(source: assembler-essentials-demo-choose-product-name.png)
+			}
+			
+			@Step {
+				Navigate to Xcode's project navigator and select "AssemblerDemo" from the project section. Go to the "Package Dependencies" tab and click on the "+" symbol to add a package dependency.
+				@Image(source: assembler-essentials-demo-add-package-1.png)
+			}
+			
+			@Step {
+				In the search bar, paste the URL [https://github.com/kyuuuyki/KyuGenericExtensions.git](https://github.com/kyuuuyki/KyuGenericExtensions.git) to find the KyuGenericExtensions package, then click on "Add Package".
+				@Image(source: assembler-essentials-demo-add-package-2.png)
+			}
+			
+			@Step {
+				Confirm the addition of the KyuGenericExtensions package by clicking on "Add Package".
+				@Image(source: assembler-essentials-demo-add-package-3.png)
+			}
+			
+			@Step {
+				Upon successful addition, the KyuGenericExtensions package will appear in the list of packages.
+				@Image(source: assembler-essentials-demo-add-package-4.png)
+			}
+			
+			@Step {
+				Select the run destination, click on "Run", and you will be able to see the "WelcomeViewController".
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-01.swift) {
+					@Image(source: assembler-essentials-demo-welcomeview-preview-1.png)
+				}
+			}
+        }
+    }
+		
+	@Section(title: "Working with Multiple Scenes") {
+		@ContentAndMedia {
+			Explore the steps involved in adding a new scene and experiment with the TransitionCoordinator functionality.
+		}
+		
+		@Steps {
+			@Step {
+				Rearrange the files and create a folder named "Tutorial" to organize the scene creation files.
+				@Image(source: assembler-essentials-demo-new-scene-1.png)
+			}
+			
+			@Step {
+				Select the "Scene" file template within the "KyuSwiftTemplates" section, and then click "Next".
+				@Image(source: assembler-essentials-demo-new-scene-2.png)
+			}
+			
+			@Step {
+				Enter "Tutorial" as the scene name then choose the directory for the "Tutorial" scene and click "Create".
+				@Image(source: assembler-essentials-demo-new-scene-3.png)
+			}
+			
+			@Step {
+				Open the "Assembler.swift" file and focus on the `configureModules()` method.
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-01.swift)
+			}
+			
+			@Step {
+				Register the "TutorialSceneModule" to the Assembler's container using the ``KyuGenericExtensions/ContainerProtocol/register(_:name:module:)`` method.
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02.swift)
+			}
+			
+			@Step {
+				Open the "WelcomeRouter.swift" file.
+				@Code(name: "WelcomeRouter.swift", file: assembler-essentials-demo-welcomerouter-01.swift)
+			}
+			
+			@Step {
+				Implement the `navigateToTutorialView()` method to enable navigation to the TutorialScene using ``KyuGenericExtensions/TransitionCoordinatorProtocol/performNavigation(_:animated:completion:)``.
+				@Code(name: "WelcomeRouter.swift", file: assembler-essentials-demo-welcomerouter-02.swift)
+			}
+			
+			@Step {
+				Open the "WelcomeViewController.swift" file.
+				@Code(name: "WelcomeViewController.swift", file: assembler-essentials-demo-welcomeviewcontroller-01.swift)
+			}
+			
+			@Step {
+				Implement the `didTapOnTutorialButton()` method to handle the action from the WelcomeView when the tutorial button is tapped.
+				@Code(name: "WelcomeViewController.swift", file: assembler-essentials-demo-welcomeviewcontroller-02.swift)
+			}
+			
+			@Step {
+				Open the "WelcomeView.swift" file.
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-01.swift) {
+					@Image(source: assembler-essentials-demo-welcomeview-preview-1.png)
+				}
+			}
+			
+			@Step {
+				Add a button called "Tutorial" to the view and connect its action to the viewController's `didTapOnTutorialButton()` method.
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-02a.swift) {
+					@Image(source: assembler-essentials-demo-welcomeview-preview-2.png)
+				}
+			}
+			
+			@Step {
+				Select the run destination, click on "Run", and you will be able to see the "Tutorial" button.
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-02b.swift) {
+					@Image(source: assembler-essentials-demo-tutorialview-1.png)
+				}
+			}
+			
+			@Step {
+				When the "Tutorial" button is tapped, it will navigate to the TutorialScene, allowing you to view the "TutorialViewController".
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-02b.swift) {
+					@Image(source: assembler-essentials-demo-tutorialview-2.png)
+				}
+			}
+			
+			@Step {
+				Feel free to style your app to your liking!
+				@Code(name: "WelcomeView.swift", file: assembler-essentials-demo-welcomeview-03.swift) {
+					@Image(source: assembler-essentials-demo-welcomeview-preview-3.png)
+				}
+			}
+		}
+	}
+	
+	@Section(title: "Adding Other Dependencies") {
+		@ContentAndMedia {
+			Learn how to easily add new dependencies and seamlessly integrate them into the existing demo application.
+			
+			In this tutorial section, we will use the `generateUniqueString()` function from the DataProcessingService to uniquely generate a string in the TutorialScene.
+		}
+		
+		@Steps {
+			@Step {
+				Creating the DataProcessingService and implementing the `generateUniqueString()` function.
+				
+				To follow the Dependency Inversion Principle, we will utilize the DataProcessingServiceProtocol. It is important to keep in mind that this protocol will be used outside of this module.
+				
+				@Code(name: "DataProcessingService.swift", file: assembler-essentials-demo-dataprocessingservice-01.swift)
+			}
+			
+			@Step {
+				Modify the DataProcessingService to conform to the ``KyuGenericExtensions/ModuleProtocol`` in order to enable its registration and resolution from the Assembler.
+				
+				@Code(name: "DataProcessingService.swift", file: assembler-essentials-demo-dataprocessingservice-02.swift)
+			}
+			
+			@Step {
+				Open the "Assembler.swift" file and focus on the `configureModules()` method.
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02.swift)
+			}
+			
+			@Step {
+				Register the "DataProcessingModule" to the Assembler's container using the ``KyuGenericExtensions/ContainerProtocol/register(_:name:module:)`` method.
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-03.swift)
+			}
+			
+			@Step {
+				Open the "TutorialModel.swift" file.
+				@Code(name: "TutorialModel.swift", file: assembler-essentials-demo-tutorialmodel-01.swift)
+			}
+			
+			@Step {
+				Rename the UseCase from "Something" to "GenerateUniqueString".
+				@Code(name: "TutorialModel.swift", file: assembler-essentials-demo-tutorialmodel-02.swift)
+			}
+			
+			@Step {
+				Open the "TutorialInteractor.swift" file.
+				@Code(name: "TutorialInteractor.swift", file: assembler-essentials-demo-tutorialinteractor-01.swift)
+			}
+			
+			@Step {
+				Include the DataProcessingModuleProtocol in the dependencies list of the TutorialInteractor, and initialize the corresponding variable with data from the init function.
+				
+				Do not forget to revise the existing code by updating it and renaming the functions to names that are suitable and aligned with their specific use case.
+				@Code(name: "TutorialInteractor.swift", file: assembler-essentials-demo-tutorialinteractor-02.swift)
+			}
+			
+			@Step {
+				Open the "TutorialSceneModule.swift" file.
+				@Code(name: "TutorialSceneModule.swift", file: assembler-essentials-demo-tutorialscenemodule-01.swift)
+			}
+			
+			@Step {
+				Resolve the DataProcessingService using the resolver and inject that service into the initializer of TutorialInteractor.
+				@Code(name: "TutorialSceneModule.swift", file: assembler-essentials-demo-tutorialscenemodule-02.swift)
+			}
+			
+			@Step {
+				Open the "TutorialPresenter.swift" file.
+				@Code(name: "TutorialPresenter.swift", file: assembler-essentials-demo-tutorialpresenter-01.swift)
+			}
+			
+			@Step {
+				Revise the existing code by updating it and renaming the functions to names that are suitable and aligned with their specific use case.
+				@Code(name: "TutorialPresenter.swift", file: assembler-essentials-demo-tutorialpresenter-02.swift)
+			}
+			
+			@Step {
+				Open the "TutorialViewController.swift" file.
+				@Code(name: "TutorialViewController.swift", file: assembler-essentials-demo-tutorialviewcontroller-01.swift)
+			}
+			
+			@Step {
+				Revise the existing code by updating it and renaming the functions to names that are suitable and aligned with their specific use case.
+				@Code(name: "TutorialViewController.swift", file: assembler-essentials-demo-tutorialviewcontroller-02.swift)
+			}
+			
+			@Step {
+				Select the run destination, click on "Run", navigate to TutorialScene by tapping on "Tutorial" button and you will see the generated unique string on the screen.
+				@Code(name: "Tutorial.swift", file: assembler-essentials-demo-tutorialview-01.swift) {
+					@Image(source: assembler-essentials-demo-tutorialview-3.png)
+				}
+			}
+		}
+	}
+}
