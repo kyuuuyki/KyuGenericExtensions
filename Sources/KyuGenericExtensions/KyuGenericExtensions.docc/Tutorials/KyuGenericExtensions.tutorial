@@ -1,0 +1,30 @@
+@Tutorials(name: "KyuGenericExtensions") {
+	@Intro(title: "Getting Started with Assembler") {
+        Build an application utilizing modularized scenes management with _Assembler_.
+		@Image(source: assembler-essentials.png)
+    }
+    
+    @Chapter(name: "Assembler Essentials") {
+		Build an application utilizing modularized scenes management with _Assembler_.
+        
+        @Image(source: assembler-essentials-chapter.png)
+		@TutorialReference(tutorial: "doc:Installing-Templates")
+        @TutorialReference(tutorial: "doc:Building-a-Demo-Application")
+    }
+	
+	@Resources {
+		Explore more resources for learning about KyuGenericExtensions.
+		
+		@SampleCode(destination: "https://github.com/kyuuuyki?tab=repositories") {
+			Explore more packages from Kyuuuyki.
+			
+			- [KyuSwiftTemplates](https://github.com/kyuuuyki/KyuSwiftTemplates.git)
+			- [KyuGenericExtensions](https://github.com/kyuuuyki/KyuGenericExtensions.git)
+			- [KyuNetworkExtensions](https://github.com/kyuuuyki/KyuNetworkExtensions.git)
+		}
+		
+		@Downloads(destination: "https://developer.apple.com/download/release") {
+			Download Xcode 13.1 or later for the latest tools and SDKs.
+		}
+	}
+}

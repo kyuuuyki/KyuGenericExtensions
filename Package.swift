@@ -12,7 +12,6 @@ let package = Package(
 			targets: ["KyuGenericExtensions"]),
 	],
 	dependencies: [
-		.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.2.0"),
 	],
 	targets: [
 		.target(

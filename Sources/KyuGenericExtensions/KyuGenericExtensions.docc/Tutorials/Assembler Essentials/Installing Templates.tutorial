@@ -1,0 +1,29 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Installing Templates") {
+		To proceed effectively with Assembly Essentials, it is necessary to install the project and file templates from KyuSwiftTemplates. This will enable the generation and linking of all necessary files to work seamlessly together.
+		@Image(source: assembler-essentials-chapter-banner.png)
+    }
+    
+    @Section(title: "Installing KyuSwiftTemplates") {
+        @ContentAndMedia {
+			Before you move on to the next chapter, make sure to install an Xcode template so that you can use it effectively.
+        }
+        
+        @Steps {
+            @Step {
+				Download the KyuSwiftTemplates from [this repository](https://github.com/kyuuuyki/KyuSwiftTemplates.git).
+                @Image(source: assembler-essentials-template-1.png)
+            }
+            
+            @Step {
+				Copy the KyuSwiftTemplates folder and paste it into `~/Library/Developer/Xcode/Templates`.
+				@Image(source: assembler-essentials-template-2.png)
+			}
+			
+			@Step {
+				Verify the result of the template installation by attempting to create a new Xcode project. You should find KyuSwiftTemplates at the bottom of the list of available templates.
+				@Image(source: assembler-essentials-template-3.png)
+			}
+        }
+    }
+}

@@ -2,6 +2,9 @@ included:
   - ../Sources
   - KyuGenericExtensions-Client
 
+excluded:
+  - ../Sources/KyuGenericExtensions/KyuGenericExtensions.docc
+
 trailing_whitespace:
   severity: error
   ignores_empty_lines: true
