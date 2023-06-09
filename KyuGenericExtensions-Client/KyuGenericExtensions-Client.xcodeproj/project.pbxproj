@@ -40,6 +40,7 @@
 		C5542436283CE426000CD77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5542438283CE426000CD77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C554243F283CE43E000CD77B /* KyuGenericExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = KyuGenericExtensions; path = ..; sourceTree = "<group>"; };
+		C557A37E2A33204A004958F9 /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
 		C5AF634A29FD280000AC4CEC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		C5E0B44E2A04F67B00DBFC16 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C5E0B4502A04F94300DBFC16 /* build.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E0B44B2A04F65E00DBFC16 /* workflows */,
+				C557A37E2A33204A004958F9 /* PULL_REQUEST_TEMPLATE.md */,
 			);
 			name = .github;
 			path = ../.github;
