@@ -1,7 +1,7 @@
 public struct TutorialSceneModule: SceneModuleProtocol {
 	public static var moduleName: String = "AssemblerDemo.TutorialSceneModule"
 	
-	public func build(resolver: ResolverProtocol, parameters: [String: Any]?) -> UIViewController? {
+	public func build(resolver: ResolverProtocol, parameters: [String: Any]) throws -> UIViewController {
 		guard let transitionCoordinator = resolver.resolve(
 			TransitionCoordinatorProtocol.self,
 			name: "AssemblerDemo.TransitionCoordinator"

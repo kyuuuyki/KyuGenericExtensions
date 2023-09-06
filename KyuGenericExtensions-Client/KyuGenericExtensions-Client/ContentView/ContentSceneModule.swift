@@ -11,14 +11,12 @@ import UIKit
 struct ContentSceneModule: SceneModuleProtocol {
 	static var moduleName: String = "ContentView"
 	
-	func build(resolver: ResolverProtocol, parameters: [String: Any]?) -> UIViewController? {
+	func build(resolver: ResolverProtocol, parameters: [String: Any]) throws -> UIViewController {
 		// Services
-		guard let transitionCoordinator = resolver.resolve(
+		let transitionCoordinator = try resolver.resolve(
 			TransitionCoordinatorProtocol.self,
 			name: "TransitionCoordinator"
-		) else {
-			return nil
-		}
+		)
 		
 		// ViewController
 		let viewController = ContentViewController()

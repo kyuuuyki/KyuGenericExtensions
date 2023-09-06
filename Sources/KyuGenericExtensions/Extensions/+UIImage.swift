@@ -3,6 +3,7 @@
 //  +UIImage.swift
 //  KyuGenericExtensions
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 #if canImport(UIKit)
@@ -28,7 +29,7 @@ public extension UIImage {
 			return nil
 		}
 		
-		guard let outputImage = filter.outputImage, let kCFNull = kCFNull else { return nil }
+		guard let outputImage = filter.outputImage, let kCFNull else { return nil }
 		
 		var bitmap = [UInt8](repeating: 0, count: 4)
 		let context = CIContext(options: [.workingColorSpace: kCFNull])

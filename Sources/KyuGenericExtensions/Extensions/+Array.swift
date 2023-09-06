@@ -16,7 +16,7 @@ public extension Array {
 	/// - Returns: An element at specify index. `nil` if that element is not exists.
 	///
 	subscript(safe index: Index) -> Element? {
-		return (index >= 0 && index < count) ? self[index] : nil
+		(index >= 0 && index < count) ? self[index] : nil
 	}
 	
 	/// Partitioning the current array into multiple chunks.
@@ -27,8 +27,8 @@ public extension Array {
 	/// - Returns: Partitioned arrays of specifed size.
 	///
 	func chunked(into size: Int) -> [[Element]] {
-		return stride(from: 0, to: count, by: size).map {
-			Array(self[$0 ..< Swift.min($0 + size, count)])
+		stride(from: 0, to: count, by: size).map { strideable in
+			Array(self[strideable ..< Swift.min(strideable + size, count)])
 		}
 	}
 }

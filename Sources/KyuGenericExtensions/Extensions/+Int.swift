@@ -3,6 +3,7 @@
 //  +Int.swift
 //  KyuGenericExtensions
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 
@@ -18,11 +19,11 @@ public extension Int {
 		let units = ["", "K", "M", "B", "T", "P", "E"]
 		var value = Double(self)
 		for unit in units {
-			if value < 1000 {
+			if value < 1_000 {
 				let string = String(format: "%.\(decimalPoints)f%@", value, unit)
 				return string.replacingOccurrences(of: ".0\(unit)", with: unit)
 			}
-			value /= 1000
+			value /= 1_000
 		}
 		return "\(value)"
 	}

@@ -13,8 +13,8 @@ public protocol StoryboardInstantiable {
 }
 
 public extension StoryboardInstantiable {
-	static var storyboardBundle: Bundle? { return nil }
-	static var storyboardIdentifier: String? { return nil }
+	static var storyboardBundle: Bundle? { nil }
+	static var storyboardIdentifier: String? { nil }
 	
 	/// Initialize ViewController from Storyboard by ClassName.
 	static func initFromStoryboard() -> Self? {

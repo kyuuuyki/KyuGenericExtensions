@@ -2,6 +2,7 @@
 //  TransitionCoordinator.swift
 //  KyuGenericExtensions-Client
 //
+//  swiftlint:disable sorted_enum_cases
 
 import Foundation
 import KyuGenericExtensions
@@ -36,7 +37,7 @@ public struct TransitionCoordinator: TransitionCoordinatorProtocol {
 		
 		switch type {
 		case .present(let sceneName, let parameters):
-			guard let viewController = resolveScene(
+			guard let viewController = try? resolveScene(
 				sceneName: sceneName,
 				parameters: parameters
 			) else {
@@ -50,7 +51,7 @@ public struct TransitionCoordinator: TransitionCoordinatorProtocol {
 			)
 			
 		case .push(let sceneName, let parameters):
-			guard let viewController = resolveScene(
+			guard let viewController = try? resolveScene(
 				sceneName: sceneName,
 				parameters: parameters
 			) else {
@@ -66,7 +67,7 @@ public struct TransitionCoordinator: TransitionCoordinatorProtocol {
 			completion?()
 			
 		case .presentAndPush(let sceneName, let parameters):
-			guard let viewController = resolveScene(
+			guard let viewController = try? resolveScene(
 				sceneName: sceneName,
 				parameters: parameters
 			) else {
@@ -108,15 +109,15 @@ class AppNavigationController: UINavigationController, UIGestureRecognizerDelega
 	}
 	
 	func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-		return viewControllers.count > 1
+		viewControllers.count > 1
 	}
 }
 
 public enum NavigationType {
 	// Base Navigation
-	case present(sceneName: String, parameters: [String: Any]?)
-	case push(sceneName: String, parameters: [String: Any]?)
-	case presentAndPush(sceneName: String, parameters: [String: Any]?)
+	case present(sceneName: String, parameters: [String: Any])
+	case push(sceneName: String, parameters: [String: Any])
+	case presentAndPush(sceneName: String, parameters: [String: Any])
 	case back
 	case reset
 }

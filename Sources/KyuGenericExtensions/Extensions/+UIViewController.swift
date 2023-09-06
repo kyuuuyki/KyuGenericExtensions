@@ -3,6 +3,7 @@
 //  +UIViewController.swift
 //  KyuGenericExtensions
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 #if canImport(UIKit)

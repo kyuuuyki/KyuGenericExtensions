@@ -21,7 +21,7 @@ struct ContentPresenter: ContentPresenterProtocol {
 extension ContentPresenter {
 	func presentRandomNumber(response: ContentModel.RandomNumber.Response) {
 		let randomNumbers = response.randomNumbers.compactMap { randomNumber in
-			return Image(systemName: "\(randomNumber).circle.fill")
+			Image(systemName: "\(randomNumber).circle.fill")
 		}
 		let viewModel = ContentModel.RandomNumber.ViewModel(randomNumbers: randomNumbers)
 		viewController?.displayRandomNumber(viewModel: viewModel)

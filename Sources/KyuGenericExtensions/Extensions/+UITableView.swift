@@ -23,12 +23,12 @@ public extension UITableView {
 	
 	/// Dequeue reusable cells by ClassName.
 	func dequeueReusableCell<T: UITableViewCell>(_ cell: T.Type) -> T? {
-		return dequeueReusableCell(withIdentifier: String(describing: cell)) as? T
+		dequeueReusableCell(withIdentifier: String(describing: cell)) as? T
 	}
 	
 	/// Dequeue reusable cells by ClassName.
 	func dequeueReusableCell<T: UITableViewCell>(_ cell: T.Type, indexPath: IndexPath) -> T? {
-		return dequeueReusableCell(withIdentifier: String(describing: cell), for: indexPath) as? T
+		dequeueReusableCell(withIdentifier: String(describing: cell), for: indexPath) as? T
 	}
 }
 

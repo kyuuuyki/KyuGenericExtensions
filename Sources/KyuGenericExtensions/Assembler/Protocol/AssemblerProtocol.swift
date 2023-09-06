@@ -29,7 +29,7 @@ public protocol AssemblerProtocol {
 
 public extension AssemblerProtocol {
 	var resolver: ResolverProtocol {
-		return container
+		container
 	}
 	
 	func reconfigure() {
