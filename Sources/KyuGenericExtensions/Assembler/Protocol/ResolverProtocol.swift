@@ -15,7 +15,7 @@ public protocol ResolverProtocol {
 	///
 	/// - Returns: A module which registered using privided moduleType.
 	///
-	func resolve<Module>(_ moduleType: Module.Type) -> Module?
+	func resolve<Module>(_ moduleType: Module.Type) throws -> Module
 	
 	/// Resolve the module from `Resolver`.
 	///
@@ -25,11 +25,15 @@ public protocol ResolverProtocol {
 	/// 	
 	/// - Returns: A module which registered using privided `moduleType` and `name`.
 	///
-	func resolve<Module>(_ moduleType: Module.Type, name: String?) -> Module?
+	func resolve<Module>(_ moduleType: Module.Type, name: String?) throws -> Module
+}
+
+public enum ResolverError: Error {
+	case moduleNotFound
 }
 
 public extension ResolverProtocol {
-	func resolve<Module>(_ moduleType: Module.Type) -> Module? {
-		resolve(moduleType, name: nil)
+	func resolve<Module>(_ moduleType: Module.Type) throws -> Module {
+		try resolve(moduleType, name: nil)
 	}
 }

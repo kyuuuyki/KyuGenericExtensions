@@ -3,7 +3,6 @@
 //  +String.swift
 //  KyuGenericExtensions
 //
-
 //  swiftlint:disable line_length
 
 import Foundation
@@ -43,9 +42,9 @@ public extension String {
 				parameters: colorParameters
 			)
 			return UIImage(ciImage: coloredQRImage)
-		} else {
-			return nil
 		}
+		
+		return nil
 	}
 }
 
@@ -106,6 +105,7 @@ public extension String {
 		locale: Locale = Locale(identifier: "en_US_POSIX"),
 		calendar: Calendar = Calendar(identifier: .gregorian),
 		timeZone: TimeZone = TimeZone(identifier: "UTC")!
+		// swiftlint:disable:previous force_unwrapping
 	) {
 		let formatter = DateFormatter()
 		formatter.dateFormat = format

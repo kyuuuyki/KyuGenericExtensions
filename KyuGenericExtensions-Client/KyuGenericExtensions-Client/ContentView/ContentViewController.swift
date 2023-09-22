@@ -2,6 +2,7 @@
 //  ContentViewController.swift
 //  KyuGenericExtensions-Client
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 import SwiftUI
@@ -27,7 +28,7 @@ class ContentViewController: ContentViewControllerProtocol, ObservableObject {
 		// Initial Configuration
 		var detents: [UISheetPresentationController.Detent] = [.large()]
 		if #available(iOS 16.0, *) {
-			detents = detents.filter({ $0.identifier == .large || $0.identifier == .medium })
+			detents = detents.filter { $0.identifier == .large || $0.identifier == .medium }
 			let fraction = UISheetPresentationController.Detent.custom { _ in
 				400
 			}

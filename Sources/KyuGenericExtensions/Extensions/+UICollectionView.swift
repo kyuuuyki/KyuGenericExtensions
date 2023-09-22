@@ -3,7 +3,6 @@
 //  +UICollectionView.swift
 //  KyuGenericExtensions
 //
-
 //  swiftlint:disable line_length
 
 import Foundation

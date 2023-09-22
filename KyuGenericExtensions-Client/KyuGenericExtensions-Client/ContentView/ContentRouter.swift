@@ -26,7 +26,7 @@ extension ContentRouter {
 		transitionCoordinator?.performNavigation(
 			NavigationType.present(
 				sceneName: "ContentView",
-				parameters: nil
+				parameters: [:]
 			),
 			animated: true,
 			completion: nil
@@ -37,7 +37,7 @@ extension ContentRouter {
 		transitionCoordinator?.performNavigation(
 			NavigationType.push(
 				sceneName: "ContentView",
-				parameters: nil
+				parameters: [:]
 			),
 			animated: true,
 			completion: nil
@@ -48,7 +48,7 @@ extension ContentRouter {
 		transitionCoordinator?.performNavigation(
 			NavigationType.presentAndPush(
 				sceneName: "ContentView",
-				parameters: nil
+				parameters: [:]
 			),
 			animated: true,
 			completion: nil

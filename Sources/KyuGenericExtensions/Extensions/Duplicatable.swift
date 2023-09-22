@@ -12,7 +12,6 @@ public protocol Duplicatable: Codable {
 public extension Duplicatable {
 	func duplicate() throws -> Self {
 		let data = try JSONEncoder().encode(self)
-		let copy = try JSONDecoder().decode(Self.self, from: data)
-		return copy
+		return try JSONDecoder().decode(Self.self, from: data)
 	}
 }

@@ -18,6 +18,13 @@ public protocol SceneModuleProtocol: ModuleProtocol {
 	/// 	
 	/// - Returns: `ViewController`.
 	///
-	func build(resolver: ResolverProtocol, parameters: [String: Any]?) -> UIViewController?
+	func build(resolver: ResolverProtocol) throws -> UIViewController
+	func build(resolver: ResolverProtocol, parameters: [String: Any]) throws -> UIViewController
+}
+
+public extension SceneModuleProtocol {
+	func build(resolver: ResolverProtocol) throws -> UIViewController {
+		try build(resolver: resolver, parameters: [:])
+	}
 }
 #endif

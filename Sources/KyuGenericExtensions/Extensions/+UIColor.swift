@@ -3,6 +3,7 @@
 //  +UIColor.swift
 //  KyuGenericExtensions
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 #if canImport(UIKit)
@@ -12,9 +13,11 @@ import UIKit
 public extension UIColor {
 	/// Init UIColor with Hexadecimal.
 	convenience init(hexadecimal: String) {
-		var trimmedHexadecimal = hexadecimal.trimmingCharacters(
-			in: .whitespacesAndNewlines
-		).uppercased()
+		var trimmedHexadecimal = hexadecimal
+			.trimmingCharacters(
+				in: .whitespacesAndNewlines
+			)
+			.uppercased()
 		
 		if trimmedHexadecimal.hasPrefix("#") {
 			trimmedHexadecimal.remove(at: trimmedHexadecimal.startIndex)
@@ -56,12 +59,12 @@ public extension UIColor {
 	
 	/// Lighter UIColor.
 	func lighter(percentage: CGFloat = 30.0) -> UIColor? {
-		return adjust(percentage: abs(percentage) )
+		adjust(percentage: abs(percentage) )
 	}
 	
 	/// Darker UIColor.
 	func darker(percentage: CGFloat = 30.0) -> UIColor? {
-		return adjust(percentage: -1 * abs(percentage) )
+		adjust(percentage: -1 * abs(percentage) )
 	}
 	
 	/// Adjust UIColor brightness.
@@ -74,9 +77,8 @@ public extension UIColor {
 				blue: min(blue + percentage / 100, 1.0),
 				alpha: alpha
 			)
-		} else {
-			return nil
 		}
+		return nil
 	}
 }
 

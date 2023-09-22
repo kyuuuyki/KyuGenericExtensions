@@ -3,7 +3,7 @@
 //  +Date.swift
 //  KyuGenericExtensions
 //
-
+//  swiftlint:disable force_unwrapping
 //  swiftlint:disable line_length
 
 import Foundation

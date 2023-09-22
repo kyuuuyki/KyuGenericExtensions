@@ -8,6 +8,7 @@ import Foundation
 /// The default implementation of the container that conforms to the ``ContainerProtocol``.
 public final class Container: ContainerProtocol {
 	public init() {}
+	
 	private var modules = [ModuleKey: Any]()
 	
 	public func removeAll() {
@@ -24,8 +25,11 @@ public final class Container: ContainerProtocol {
 		modules[key] = module
 	}
 	
-	public func resolve<Module>(_ moduleType: Module.Type, name: String?) -> Module? {
+	public func resolve<Module>(_ moduleType: Module.Type, name: String?) throws -> Module {
 		let key = ModuleKey(moduleType: moduleType, name: name)
-		return modules[key] as? Module
+		if let module = modules[key] as? Module {
+			return module
+		}
+		throw ResolverError.moduleNotFound
 	}
 }

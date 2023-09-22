@@ -2,6 +2,7 @@
 //  ContentInteractor.swift
 //  KyuGenericExtensions-Client
 //
+//  swiftlint:disable no_magic_numbers
 
 import Foundation
 
@@ -29,9 +30,7 @@ extension ContentInteractor {
 		if let index = request.index {
 			randomNumbers[index] = .random(in: (1...50))
 		} else {
-			randomNumbers = (0..<10).compactMap({ _ in
-				return 0
-			})
+			randomNumbers = (0..<10).compactMap { _ in 0 }
 		}
 		
 		let response = ContentModel.RandomNumber.Response(randomNumbers: randomNumbers)

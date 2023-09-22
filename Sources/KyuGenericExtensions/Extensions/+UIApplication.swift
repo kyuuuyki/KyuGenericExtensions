@@ -12,17 +12,17 @@ import UIKit
 public extension UIApplication {
 	/// The singleton app instance.
 	static func application() -> UIApplication {
-		return UIApplication.shared
+		UIApplication.shared
 	}
 	
 	/// Returns the version number specified in the receiver's information property list.
 	var versionNumber: String? {
-		return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+		Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
 	}
 	
 	/// Returns the build number specified in the receiver's information property list.
 	var buildNumber: String? {
-		return Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+		Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
 	}
 }
 
@@ -59,7 +59,7 @@ public extension UIApplication {
 public extension UIApplication {
 	/// The app's currently connected scenes' keyWindow.
 	var window: UIWindow? {
-		return UIApplication
+		UIApplication
 			.shared
 			.connectedScenes
 			.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
