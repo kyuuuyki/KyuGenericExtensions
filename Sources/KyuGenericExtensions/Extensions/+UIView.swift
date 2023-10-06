@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Initialization
 public extension UIView {
-	private class func initFromNib<T: UIView>(_ viewClass: T.Type, bundle: Bundle) -> T? {
+	private final class func initFromNib<T: UIView>(_ viewClass: T.Type, bundle: Bundle) -> T? {
 		bundle.loadNibNamed(
 			String(describing: viewClass),
 			owner: nil,

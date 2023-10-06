@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		C535B47429ED447D000103DC /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		C535B47629ED4492000103DC /* TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
-		C5542427283CE424000CD77B /* KyuGenericExtensions-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KyuGenericExtensions-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5542427283CE424000CD77B /* KGE Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KGE Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C554242A283CE424000CD77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C554242C283CE424000CD77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C554242E283CE424000CD77B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				C5E0B44E2A04F67B00DBFC16 /* .swiftlint.yml */,
 				C5E0B44A2A04F65E00DBFC16 /* .github */,
 				C554243E283CE43E000CD77B /* Packages */,
-				C5542429283CE424000CD77B /* KyuGenericExtensions-Client */,
+				C5542429283CE424000CD77B /* Demo */,
 				C5542428283CE424000CD77B /* Products */,
 				C5542440283CE458000CD77B /* Frameworks */,
 			);
@@ -90,12 +90,12 @@
 		C5542428283CE424000CD77B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5542427283CE424000CD77B /* KyuGenericExtensions-Client.app */,
+				C5542427283CE424000CD77B /* KGE Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5542429283CE424000CD77B /* KyuGenericExtensions-Client */ = {
+		C5542429283CE424000CD77B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				C554242A283CE424000CD77B /* AppDelegate.swift */,
@@ -107,7 +107,7 @@
 				C5542435283CE426000CD77B /* LaunchScreen.storyboard */,
 				C5542438283CE426000CD77B /* Info.plist */,
 			);
-			path = "KyuGenericExtensions-Client";
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		C554243E283CE43E000CD77B /* Packages */ = {
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5542426283CE424000CD77B /* KyuGenericExtensions-Client */ = {
+		C5542426283CE424000CD77B /* KGE Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C554243B283CE426000CD77B /* Build configuration list for PBXNativeTarget "KyuGenericExtensions-Client" */;
+			buildConfigurationList = C554243B283CE426000CD77B /* Build configuration list for PBXNativeTarget "KGE Demo" */;
 			buildPhases = (
 				C5542423283CE424000CD77B /* Sources */,
 				C5542424283CE424000CD77B /* Frameworks */,
@@ -174,12 +174,12 @@
 			);
 			dependencies = (
 			);
-			name = "KyuGenericExtensions-Client";
+			name = "KGE Demo";
 			packageProductDependencies = (
 				C5542441283CE458000CD77B /* KyuGenericExtensions */,
 			);
 			productName = "KyuGenericExtensions-Client";
-			productReference = C5542427283CE424000CD77B /* KyuGenericExtensions-Client.app */;
+			productReference = C5542427283CE424000CD77B /* KGE Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C5542422283CE424000CD77B /* Build configuration list for PBXProject "KyuGenericExtensions-Client" */;
+			buildConfigurationList = C5542422283CE424000CD77B /* Build configuration list for PBXProject "Demo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +212,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5542426283CE424000CD77B /* KyuGenericExtensions-Client */,
+				C5542426283CE424000CD77B /* KGE Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -419,9 +419,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FHB8SG5L4X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KyuGenericExtensions-Client/Info.plist";
+				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -432,7 +432,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kyuuuyki.KyuGenericExtensions-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = kyuuuyki.KyuGenericExtensions.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,9 +447,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FHB8SG5L4X;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KyuGenericExtensions-Client/Info.plist";
+				INFOPLIST_FILE = Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kyuuuyki.KyuGenericExtensions-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = kyuuuyki.KyuGenericExtensions.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -471,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5542422283CE424000CD77B /* Build configuration list for PBXProject "KyuGenericExtensions-Client" */ = {
+		C5542422283CE424000CD77B /* Build configuration list for PBXProject "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5542439283CE426000CD77B /* Debug */,
@@ -480,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C554243B283CE426000CD77B /* Build configuration list for PBXNativeTarget "KyuGenericExtensions-Client" */ = {
+		C554243B283CE426000CD77B /* Build configuration list for PBXNativeTarget "KGE Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C554243C283CE426000CD77B /* Debug */,
