@@ -30,7 +30,10 @@ Additionally, this package offers core protocols for managing modularized scenes
 
 ### Utilizing Registered Modules
 
-- ``ResolverProtocol``
 - ``TransitionCoordinatorProtocol``
+- ``ResolverProtocol``
+- ``ResolverError``
 
 ### Extended Functionalities
+
+- ``CodableIgnored``

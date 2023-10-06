@@ -2,19 +2,14 @@ public struct TutorialSceneModule: SceneModuleProtocol {
 	public static var moduleName: String = "AssemblerDemo.TutorialSceneModule"
 	
 	public func build(resolver: ResolverProtocol, parameters: [String: Any]) throws -> UIViewController {
-		guard let transitionCoordinator = resolver.resolve(
+		let transitionCoordinator = try resolver.resolve(
 			TransitionCoordinatorProtocol.self,
 			name: "AssemblerDemo.TransitionCoordinator"
-		) else {
-			return nil
-		}
-		
-		guard let dataProcessingService = resolver.resolve(
+		)
+		let dataProcessingService = try resolver.resolve(
 			DataProcessingServiceProtocol.self,
 			name: "AssemblerDemo.DataProcessingService"
-		) else {
-			return nil
-		}
+		)
 		
 		let viewController = TutorialViewController()
 		

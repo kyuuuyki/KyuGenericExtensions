@@ -24,6 +24,8 @@ public protocol ResolverProtocol {
 	/// 	- name: Registered module's name.
 	/// 	
 	/// - Returns: A module which registered using privided `moduleType` and `name`.
+	/// - Throws: ``ResolverError/moduleNotFound`` if designated module
+	/// was not registered to the container.
 	///
 	func resolve<Module>(_ moduleType: Module.Type, name: String?) throws -> Module
 }
