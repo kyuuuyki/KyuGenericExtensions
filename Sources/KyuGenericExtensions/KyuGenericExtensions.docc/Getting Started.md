@@ -28,7 +28,7 @@ container.register(
 If you need to use any module, you can resolve it using the ``ResolverProtocol/resolve(_:name:)`` method.
 
 ```swift
-let transitionCoordinator = resolver.resolve(
+let transitionCoordinator = try resolver.resolve(
 	TransitionCoordinatorProtocol.self,
 	name: TransitionCoordinator.moduleName
 )
@@ -41,15 +41,13 @@ Each viewController is constructed by its corresponding ``SceneModuleProtocol`` 
 ```swift
 func build(
 	resolver: ResolverProtocol, 
-	parameters: [String: Any]?
-) -> UIViewController? {
+	parameters: [String: Any]
+) throws -> UIViewController {
 	// Resolving TransitionCoordinator from Container
-	guard let transitionCoordinator = resolver.resolve(
+	let transitionCoordinator = try resolver.resolve(
 		TransitionCoordinatorProtocol.self,
 		name: TransitionCoordinator.moduleName
-	) else {
-		return nil
-	}
+	)
 	
 	// ViewController Initialization
 	let viewController = ContentViewController()
@@ -76,13 +74,12 @@ func scene(
 
 ```swift
 func configure(window: UIWindow?) {
-	guard let viewController = resolver.resolve(
-		SceneModuleProtocol.self,
-		name: StartingSceneModule.moduleName
-	)?.build(resolver: resolver, parameters: nil)
-	else {
-		return
-	}
+	let viewController = try? resolver
+		.resolve(
+			SceneModuleProtocol.self,
+			name: StartingSceneModule.moduleName
+		)
+		.build(resolver: resolver)
 	window?.rootViewController = viewController
 }
 ```

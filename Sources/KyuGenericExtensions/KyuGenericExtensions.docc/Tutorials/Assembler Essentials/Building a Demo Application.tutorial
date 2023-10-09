@@ -79,7 +79,7 @@
 			
 			@Step {
 				Register the "TutorialSceneModule" to the Assembler's container using the ``KyuGenericExtensions/ContainerProtocol/register(_:name:module:)`` method.
-				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02.swift)
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02a.swift)
 			}
 			
 			@Step {
@@ -163,7 +163,7 @@
 			
 			@Step {
 				Open the "Assembler.swift" file and focus on the `configureModules()` method.
-				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02.swift)
+				@Code(name: "Assembler.swift", file: assembler-essentials-demo-assembler-02b.swift)
 			}
 			
 			@Step {
