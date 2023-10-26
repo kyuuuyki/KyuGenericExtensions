@@ -5,7 +5,6 @@
 //
 //  swiftlint:disable no_magic_numbers
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 

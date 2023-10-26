@@ -5,7 +5,6 @@
 //
 //  swiftlint:disable line_length
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 
