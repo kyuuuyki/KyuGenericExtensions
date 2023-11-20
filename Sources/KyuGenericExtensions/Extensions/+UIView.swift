@@ -8,8 +8,9 @@
 #if canImport(UIKit)
 import UIKit
 
-// MARK: - Initialization
+@available(*, deprecated, message: "UIKit extensions may be deprecated and eventually removed from the package in the distant future. We recommend transitioning to SwiftUI for a more future-proof solution.") // swiftlint:disable:this line_length
 public extension UIView {
+	// MARK: Initialization
 	private final class func initFromNib<T: UIView>(_ viewClass: T.Type, bundle: Bundle) -> T? {
 		bundle.loadNibNamed(
 			String(describing: viewClass),
@@ -22,10 +23,8 @@ public extension UIView {
 	class func initFromNib(bundle: Bundle? = nil) -> Self? {
 		initFromNib(self, bundle: bundle ?? .main)
 	}
-}
-
-// MARK: - Round Corner
-public extension UIView {
+	
+	// MARK: Round Corner
 	/// Set corners for View.
 	func roundCorners(corners: UIRectCorner, radius: CGFloat) {
 		clipsToBounds = true
@@ -37,10 +36,8 @@ public extension UIView {
 	func circle() {
 		layer.cornerRadius = frame.height / 2
 	}
-}
-
-// MARK: - View to Image
-public extension UIView {
+	
+	// MARK: View to Image
 	/// Get image from View.
 	func toImage() -> UIImage {
 		let renderer = UIGraphicsImageRenderer(size: bounds.size)
@@ -48,10 +45,8 @@ public extension UIView {
 			drawHierarchy(in: bounds, afterScreenUpdates: true)
 		}
 	}
-}
-
-// MARK: - Add Blurred Background Image
-public extension UIView {
+	
+	// MARK: Add Blurred Background Image
 	/// Add Blur Background.
 	func insertBlurredBackground(withStyle: UIBlurEffect.Style? = nil) {
 		// Back View
@@ -64,10 +59,8 @@ public extension UIView {
 		sendSubviewToBack(blurEffectView)
 		clipsToBounds = true
 	}
-}
-
-// MARK: - Gradient layer
-public extension UIView {
+	
+	// MARK: Gradient layer
 	/// Apply Gradient layer on View.
 	func applyGradient(colors: [UIColor]) {
 		applyGradient(colors: colors, locations: [])

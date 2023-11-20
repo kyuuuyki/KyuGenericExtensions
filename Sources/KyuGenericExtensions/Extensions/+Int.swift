@@ -11,10 +11,9 @@ public extension Int {
 	/// Format number into abbreviated form of K, M, B, etc.
 	///
 	/// - Parameters:
-	/// 	- decimalPoints: The designated decimal points for formatted number.
+	///   - decimalPoints: The designated decimal points for formatted number.
 	/// 	
 	/// - Returns: Formatted number in form of `String`.
-	///
 	func abbreviated(decimalPoints: Int) -> String {
 		let units = ["", "K", "M", "B", "T", "P", "E"]
 		var value = Double(self)

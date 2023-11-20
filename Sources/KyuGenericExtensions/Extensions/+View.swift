@@ -9,6 +9,12 @@
 import SwiftUI
 
 public extension View {
+	/// Rounding current view and apply border to it.
+	///
+	/// - Parameters:
+	///   - cornerRadius: The radius of the rounded corners.
+	///   - borderWidth: The width of the stroke that outlines this shape.
+	///   - borderColor: The color with which to stroke this shape.
 	func cornerRadius(
 		_ radius: CGFloat,
 		borderWidth: CGFloat,
@@ -123,10 +129,12 @@ public extension View {
 }
 
 public extension View {
+	/// A size that specifies the height and width of the connected scenes' keyWindow.
 	var windowSize: CGSize {
 		UIApplication.shared.window?.bounds.size ?? .zero
 	}
 	
+	/// The insets that you use to determine the safe area for the connected scenes' keyWindow.
 	var safeAreaInsets: EdgeInsets {
 		let insets = UIApplication.shared.window?.safeAreaInsets ?? .zero
 		return EdgeInsets(
@@ -140,6 +148,15 @@ public extension View {
 
 @available(iOS 16.0, *)
 public extension View {
+	/// Adds an action to perform when the frame changes.
+	///
+	/// - Parameters:
+	///   - coordinateSpace: The coordinate space of the view hierarchy
+	///   that will be used as a reference frame.
+	///   - action: The action to perform when the value for frame changes. The
+	///     `action` closure passes the new value as its parameter.
+	///
+	/// - Returns: A view that triggers `action` when the value for frame changes.
 	func onPreferenceFrameChange(
 		in coordinateSpace: CoordinateSpace = .global,
 		perform action: @escaping (CGRect) -> Void

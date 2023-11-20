@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Store current variable to global instance of NSUserDefaults.
 @propertyWrapper
 public struct UserDefaultsStorable<T: Codable> {
 	public var wrappedValue: T? {

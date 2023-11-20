@@ -8,8 +8,9 @@
 #if canImport(UIKit)
 import UIKit
 
-// MARK: - SplitView Ratio
+@available(*, deprecated, message: "UIKit extensions may be deprecated and eventually removed from the package in the distant future. We recommend transitioning to SwiftUI for a more future-proof solution.") // swiftlint:disable:this line_length
 public extension UISplitViewController {
+	// MARK: SplitView Ratio
 	/// Set SplitView's masterView and detailView ratio.
 	func configure(widthFraction: CGFloat, minimumDetailSectionWidth: CGFloat = 0) {
 		// SplitView

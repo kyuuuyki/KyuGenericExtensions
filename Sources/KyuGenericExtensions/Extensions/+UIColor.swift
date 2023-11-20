@@ -8,8 +8,9 @@
 #if canImport(UIKit)
 import UIKit
 
-// MARK: - Initialization
+@available(*, deprecated, message: "UIKit extensions may be deprecated and eventually removed from the package in the distant future. We recommend transitioning to SwiftUI for a more future-proof solution.") // swiftlint:disable:this line_length
 public extension UIColor {
+	// MARK: Initialization
 	/// Init UIColor with Hexadecimal.
 	convenience init(hexadecimal: String) {
 		var trimmedHexadecimal = hexadecimal
@@ -39,10 +40,8 @@ public extension UIColor {
 			self.init(red: red, green: green, blue: blue, alpha: 1)
 		}
 	}
-}
-
-// MARK: - Adjust Color Brightness
-public extension UIColor {
+	
+	// MARK: Adjust Color Brightness
 	/// Check if UIColor is dark or light color.
 	var isDarkColor: Bool {
 		var red: CGFloat = 0
@@ -79,10 +78,8 @@ public extension UIColor {
 		}
 		return nil
 	}
-}
-
-// MARK: - Color to Image
-public extension UIColor {
+	
+	// MARK: Color to Image
 	/// Get Image from Color.
 	func toImage(rect: CGRect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)) -> UIImage {
 		UIGraphicsBeginImageContext(rect.size)
@@ -102,10 +99,8 @@ public extension UIColor {
 		
 		return image
 	}
-}
-
-// MARK: - Get Color
-public extension UIColor {
+	
+	// MARK: Get Color
 	/// Get Reverse UIColor.
 	func reverse() -> UIColor {
 		let ciColor = CIColor(color: self)

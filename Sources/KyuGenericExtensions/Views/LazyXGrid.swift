@@ -6,9 +6,26 @@
 
 import SwiftUI
 
+/// A container view that arranges its child views in a grid that
+/// grows horizontally or vertically, creating items only as needed.
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public struct LazyXGrid<Content>: View where Content: View {
 	// MARK: INITIALIZERS
+	
+	// swiftlint:disable line_length
+	/// Creates a grid that grows horizontally.
+	///
+	/// - Parameters:
+	///   - height: Designated height of the grid.
+	///   Required when header exists.
+	///   May be specify outside of the grid using 
+	///   [frame(width:height:alignment:)](https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:))
+	///   - rows: A number of rows in the grid.
+	///   - alignment: The alignment of the grid within its parent view.
+	///   - spacing: The spacing between the grid and the next item in its
+	///   parent view.
+	///   - pinnedViews: Views to pin to the bounds of a parent scroll view.
+	///   - content: The content of the grid.
 	public init(
 		height: CGFloat? = nil, // Required when header exists
 		rows: Int,
@@ -28,15 +45,30 @@ public struct LazyXGrid<Content>: View where Content: View {
 			count: rows
 		)
 		self.spacing = spacing ?? .zero
-		self.alignment = alignment
+		self.verticalAlignment = alignment
 		self.pinnedViews = pinnedViews
 		self.content = content
 	}
+	// swiftlint:enable line_length
 	
+	// swiftlint:disable line_length
+	/// Creates a grid that grows vertically.
+	///
+	/// - Parameters:
+	///   - width: Designated width of the grid.
+	///   Required when header exists.
+	///   May be specify outside of the grid using 
+	///   [frame(width:height:alignment:)](https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:))
+	///   - columns: A number of columns in the grid.
+	///   - alignment: The alignment of the grid within its parent view.
+	///   - spacing: The spacing between the grid and the next item in its
+	///   parent view.
+	///   - pinnedViews: Views to pin to the bounds of a parent scroll view.
+	///   - content: The content of the grid.
 	public init(
 		width: CGFloat? = nil,
 		columns: Int,
-		alignment: VerticalAlignment = .center,
+		alignment: HorizontalAlignment = .center,
 		spacing: CGFloat? = nil,
 		pinnedViews: PinnedScrollableViews = .init(),
 		@ViewBuilder content: @escaping () -> Content
@@ -51,17 +83,19 @@ public struct LazyXGrid<Content>: View where Content: View {
 			),
 			count: columns
 		)
-		self.alignment = alignment
+		self.horizontalAlignment = alignment
 		self.spacing = spacing ?? .zero
 		self.pinnedViews = pinnedViews
 		self.content = content
 	}
+	// swiftlint:enable line_length
 	
 	// MARK: VARIABLES
 	var axis: Axis
 	var gridSize: CGFloat?
 	var gridItems: [GridItem]
-	var alignment: VerticalAlignment
+	var verticalAlignment: VerticalAlignment = .center
+	var horizontalAlignment: HorizontalAlignment = .center
 	var spacing: CGFloat?
 	var pinnedViews: PinnedScrollableViews
 	var content: () -> Content
@@ -72,7 +106,7 @@ public struct LazyXGrid<Content>: View where Content: View {
 		case .horizontal:
 			LazyHGrid(
 				rows: gridItems,
-				alignment: alignment,
+				alignment: verticalAlignment,
 				spacing: spacing,
 				pinnedViews: pinnedViews,
 				content: content
@@ -82,7 +116,7 @@ public struct LazyXGrid<Content>: View where Content: View {
 		case .vertical:
 			LazyVGrid(
 				columns: gridItems,
-				alignment: .center,
+				alignment: horizontalAlignment,
 				spacing: spacing,
 				pinnedViews: pinnedViews,
 				content: content

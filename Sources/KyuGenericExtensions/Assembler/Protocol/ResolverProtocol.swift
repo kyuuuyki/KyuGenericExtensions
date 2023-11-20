@@ -30,7 +30,9 @@ public protocol ResolverProtocol {
 	func resolve<Module>(_ moduleType: Module.Type, name: String?) throws -> Module
 }
 
+/// A type representing an error value that can be thrown by module retrieving process.
 public enum ResolverError: Error {
+	/// Designated module was not registered to the container.
 	case moduleNotFound
 }
 

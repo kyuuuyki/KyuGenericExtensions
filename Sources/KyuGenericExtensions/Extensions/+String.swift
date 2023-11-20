@@ -13,11 +13,10 @@ public extension String {
 	/// Return QRCode image representation of current string.
 	///
 	/// - Parameters:
-	/// 	- size: Size of the generated image.
-	/// 	- correctionLevel: Input correction level for the generated image.
+	///   - size: Size of the generated image.
+	///   - correctionLevel: Input correction level for the generated image.
 	///
 	/// - Returns: Generated QRCode Image
-	///
 	func toQRCodeImage(of size: CGSize, correctionLevel: String = "Q") -> UIImage? {
 		let data = self.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
 		let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -52,11 +51,10 @@ public extension String {
 	/// Returns calculated maximum height of current string for specified width and font.
 	///
 	/// - Parameters:
-	/// 	- width: Maximum width for each line.
-	/// 	- font: Font for target string.
+	///   - width: Maximum width for each line.
+	///   - font: Font for target string.
 	///
 	/// - Returns: Calculated height of the string.
-	///
 	func height(width: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
 		let boundingBox = self.boundingRect(
@@ -70,11 +68,10 @@ public extension String {
 	
 	/// Returns calculated maximum width of current string for specified height and font.
 	/// - Parameters:
-	/// 	- height: Maximum height for all lines.
-	/// 	- font: Font for target string.
+	///   - height: Maximum height for all lines.
+	///   - font: Font for target string.
 	///
 	/// - Returns: Calculated width of the string.
-	///
 	func width(height: CGFloat, font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
 		let boundingBox = self.boundingRect(
@@ -93,11 +90,10 @@ public extension String {
 	/// Returns a string representation of a specified date.
 	///
 	/// - Parameters:
-	/// 	- date: The date to format.
-	/// 	- format: The date format for represented date.
-	/// 	- calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
-	/// 	- timeZone: The timezone for represented date. If unspecified, the system time zone is used.
-	/// 	
+	///   - date: The date to format.
+	///   - format: The date format for represented date.
+	///   - calendar: The calendar for represented date. If unspecified, the logical calendar for the current user is used.
+	///   - timeZone: The timezone for represented date. If unspecified, the system time zone is used.
 	init(
 		date: Date,
 		format: String,
@@ -121,11 +117,10 @@ public extension String {
 	/// Finds and returns the boolean indicating whether current string contains a specified substring.
 	///
 	/// - Parameters:
-	/// 	- string: Substring to find.
-	/// 	- parameter insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
+	///   - string: Substring to find.
+	///   - insensitive: Boolean specified matching mode. `true` for caseInsensitive. `false` if not specified.
 	///
 	/// - Returns: Boolean for checking result. `true` if current string contains specified substring.
-	///
 	func contains(string: String, insensitive: Bool = false) -> Bool {
 		if insensitive {
 			return range(of: string, options: .caseInsensitive) != nil

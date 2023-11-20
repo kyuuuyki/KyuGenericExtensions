@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Ignore current variable from Encoding/Decoding process.
 @propertyWrapper
 public struct CodableIgnored<T>: Codable {
 	public var wrappedValue: T?
