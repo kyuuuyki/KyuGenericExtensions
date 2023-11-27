@@ -4,7 +4,6 @@
 //  KyuGenericExtensions
 //
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 
@@ -31,10 +30,9 @@ public extension UIApplication {
 	/// Get the top-most presenting `UIViewController`.
 	///
 	/// - Parameters:
-	/// 	- controller: Controller to get it's top-most presenting ViewController.
+	///   - controller: Controller to get it's top-most presenting ViewController.
 	///
 	/// - returns: A top-most presenting `UIViewController`.
-	///
 	class func topViewController(
 		controller: UIViewController? = UIApplication.shared.window?.rootViewController
 	) -> UIViewController? {

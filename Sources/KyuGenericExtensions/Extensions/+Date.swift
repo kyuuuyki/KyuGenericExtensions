@@ -12,11 +12,10 @@ import Foundation
 public extension Date {
 	/// Returns a date representation of a specified string.
 	/// - Parameters:
-	/// 	- date: The string to format.
-	/// 	- format: The date format for represented string.
-	/// 	- calendar: The calendar for represented string. If unspecified, the logical calendar for the current user is used.
-	/// 	- timeZone: The timezone for represented string. If unspecified, the system time zone is used.
-	///
+	///   - date: The string to format.
+	///   - format: The date format for represented string.
+	///   - calendar: The calendar for represented string. If unspecified, the logical calendar for the current user is used.
+	///   - timeZone: The timezone for represented string. If unspecified, the system time zone is used.
 	init?(
 		string: String,
 		format: String...,

@@ -4,12 +4,12 @@
 //  KyuGenericExtensions
 //
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 
-// MARK: - Configure Cells
+@available(*, deprecated, message: "UIKit extensions may be deprecated and eventually removed from the package in the distant future. We recommend transitioning to SwiftUI for a more future-proof solution.") // swiftlint:disable:this line_length
 public extension UITableView {
+	// MARK: Configure Cells
 	/// Register reusable cells by ClassName.
 	func register<T: UITableViewCell>(_ cell: T.Type) {
 		register(
@@ -30,10 +30,8 @@ public extension UITableView {
 	func dequeueReusableCell<T: UITableViewCell>(_ cell: T.Type, indexPath: IndexPath) -> T? {
 		dequeueReusableCell(withIdentifier: String(describing: cell), for: indexPath) as? T
 	}
-}
-
-// MARK: - Scrolling
-public extension UITableView {
+	
+	// MARK: Scrolling
 	/// Scroll to last UITableViewCell.
 	func scrollToBottom() {
 		let section = numberOfSections - 1

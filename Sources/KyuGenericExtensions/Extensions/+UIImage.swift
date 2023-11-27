@@ -5,10 +5,10 @@
 //
 //  swiftlint:disable no_magic_numbers
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 
+@available(*, deprecated, message: "UIKit extensions may be deprecated and eventually removed from the package in the distant future. We recommend transitioning to SwiftUI for a more future-proof solution.") // swiftlint:disable:this line_length
 public extension UIImage {
 	var averageColor: UIColor? {
 		guard let inputImage = CIImage(image: self) else { return nil }

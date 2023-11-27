@@ -5,12 +5,11 @@
 //
 //  swiftlint:disable no_magic_numbers
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 
-// MARK: - Hide keyboard when tapping outside input field
 public extension UIViewController {
+	// MARK: Hide keyboard when tapping outside input field
 	/// Make ViewController automatically end editing when user tapped outside input field.
 	func hideKeyboardWhenTappedAround() {
 		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -22,10 +21,8 @@ public extension UIViewController {
 	private func hideKeyboard() {
 		view.endEditing(true)
 	}
-}
-
-// MARK: - Alert handling
-public extension UIViewController {
+	
+	// MARK: Alert handling
 	/// Display AlertView with activity indicator.
 	func displayAlertWithActivityIndicator(loadingText: String? = nil) {
 		let alert = UIAlertController(
